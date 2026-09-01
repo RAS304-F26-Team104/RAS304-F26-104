@@ -6,12 +6,12 @@ tags:
 ---
 <center>
 <font size="8">Project Name<br>
-<font size="5">Team ###<br>
-**Submission: month, DD, YYYY**<br>
+<font size="5">Team 11<br>
+**Submission: September 1st, 2026**<br>
 Semester and Year<br>
 <font size="4">Arizona State University<br>
-**EGR 304**<br>
-Professor Name<br>
+**RAS 304**<br>
+Professor Thangavelu<br>
   
 
 </center>
@@ -26,7 +26,8 @@ Professor Name<br>
 
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
-| Name #1                | [JohnDoe.GitHub](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/) |
-| Name #2                | link |
-| Name #3                | link |
-| Name #4                | link |
+| Jared Chapman          | [JohnDoe.GitHub](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/) |
+| Emmanuel Garcia        | link |
+| Aakash Kumar           | [AakashKumar.GitHub](https://iicaros.github.io/akuma501_RAS304_F26/) |
+| Sakiya Mason           | link |
+| Joseph Zimmerman       | link |
