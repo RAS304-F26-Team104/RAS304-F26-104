@@ -124,6 +124,22 @@ We track all ongoing action items and project milestones through structured stat
 For coding, CAD design, and writing up documentation, we will divide the work based on what people are good at or what they want to learn. Every Thursday, we will map out the technical tasks for the week and split them up evenly so the workload stays fair for everyone.
 
 
+## Team Coordination & Accountability
+
+### Maintaining Progress and Deadlines
+
+We will have two meetings weekly to make sure we are making steady progress and seeking feedback for any hurdles met throughout the process. Before each assignment is submitted, all team members will review the final draft and confirm they are satisfied with it, acting as a "sign-off" before submission. It is typical that each student may have a little more experience with different aspects needed to complete a project like this; we will ensure everyone has a role they feel suited for and place emphasis on open communication and collaboration. If a member lacks confidence or experience in a specific area, other team members with relevant knowledge will help walk them through it so no one falls behind.
+
+Feedback from design reviews will be shared with the full team immediately after each review, along with a summary of required changes and who is responsible for addressing them. We will discuss the feedback as a group to make sure everyone understands what needs to change and why.
+
+### Maintaining Accountability
+
+Team members will be held accountable if they are not contributing and are causing the group to miss deadlines. Everyone is free to voice concerns to each other directly, and we will address issues early rather than letting them build up.
+
+Underperformance will typically show up as missed meetings, missed deadlines, or a lack of communication about progress on assigned tasks. If a team member is underperforming, we will first check in with them privately to understand what's going on and see if we can help, whether that means redistributing work, offering guidance, or adjusting their role. If the issue continues after that conversation, we will address it as a group.
+
+For team members who consistently do not contribute despite these efforts, we will make the instructor aware and work to ensure the project can still be completed to its full capacity.
+
 
 ## Conflict Recoginition and Resolution
 
