@@ -50,7 +50,7 @@ We will communicate primarily through cell and discord with a group chat of all 
 | Name     | First Choice | Second Choice | Third Choice |
 |----------|:------------:|:--------------:|:--------------:|
 | Jared    | Cell         | Discord         | Email           |
-| Ash      | Cell         | Discord         | Email           |
+| Ash      | Discord      | Cell            | Email           |
 | Joseph   | Cell         | Discord         | Email           |
 | Emmanuel | Cell         | Discord         | Email           |
 | Sakiya   | Cell         | Discord         | Email           |
@@ -67,3 +67,37 @@ How will we handle feedback and correspondence?
 
 We will do our best to maintain course and steady progress throughout the semester. Jared and Ash will be the primary point of contact for Professor Vivek and the TA. All correspondence will be shared promptly with all group members.
 
+
+
+
+
+
+## Conflict Recoginition and Resolution
+
+- Differences of opinion among project team members are common. Because of this, the question here is not how you will avoid these issues, but how you will handle them to accomplish your team mission.
+
+- Recognize and openly acknowledge disagreement when it occurs.
+
+- Controversy is normal - your opinions will differ from time to time, especially as team members get to know one another and begin working together.
+
+- Conflicts of interest arise from ill-structured project roles and responsibilities, and should be avoided. Such conflicts of interest typically happen when a single person on the project takes on too many roles.
+
+- Resolve any conflicts that occur during the semester within the team.
+
+- Determine when a problem should be escalated to the instructor.
+
+#### Discussion
+
+Our group decided that differences of opinion or conflicts should be addressed as soon as possible during regular check-ins rather than leaving them unresolved. When discussing, every memeber should be allowed to explain
+their perspective fully while the others listen. If we can't come to a proper conclusion then we plan to vote on the issue and go with the majority. <br>
+
+Disputes will be handled internally primarly. As a last resort the issue will be escalated to the instructor for issues regarding persistent non-responsiveness, not completing assigned tasks, or failure to follow the team charter.
+
+
+#### Signatures
+
+Jared Chapman<br>
+Emmanuel Garcia<br>
+Aakash Kumar<br>
+Sakiya Mason<br>
+Joseph Zimmerman<br>
