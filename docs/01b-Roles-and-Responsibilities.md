@@ -1,9 +1,6 @@
 # Team Roles and Responsibilities
 
 ## Who is doing what?
-To keep things organized and make sure nobody gets overwhelmed, we split up the main jobs. Since turning in the big assignments on Canvas takes the most work, Sakiya and ash are teaming up on that one to share the load.
-
-Here is who is starting out in each role:
 
 * **Meeting Leader (Jared):** Sets up our Zoom and Discord links, drops an agenda before we meet, and keeps the group chat on track during our calls.
 * **Meeting Recorder (Joseph):** Takes quick notes during our syncs, tracks who showed up, and posts the action items so everyone knows what they need to work on.
@@ -15,7 +12,7 @@ Here is who is starting out in each role:
 ## How we plan to manage roles
 
 ### How often will we switch jobs?
-We'll rotate these positions every **two weeks**. That way, everyone gets a fair chance to try out different roles, but we stay on a job long enough to actually get used to it.
+We'll rotate these positions every two weeks. That way, everyone gets a fair chance to try out different roles, but we stay on a job long enough to actually get used to it.
 
 ### How do we pick who gets what role?
 We started out based on what people were down to try first. For the rest of the semester, we will just follow a set rotation order. If two people want the same job down the road, we'll just flip a coin or vote on it in Discord.
