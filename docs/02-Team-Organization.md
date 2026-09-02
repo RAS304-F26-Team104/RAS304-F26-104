@@ -38,3 +38,7 @@ We're quite interested in learning how to design custom pcbs and are also pretty
 
 
 ## Product Mission Statement
+
+After discussing our project goals, our team decided to focus on creating a robotic gripper that demonstrates the core concepts of embedded systems while remaining realistic to complete within the semester. We agreed that the gripper should focus on reliable movement, basic sensing, and simple feedback rather than trying to include too many advanced features. A force sensor will allow the gripper to detect how much force is being applied to an object, while the modular design will make the system easier to test, troubleshoot, and improve.
+
+Our mission is to create a modular robotic gripper that can reliably grasp and release objects while using embedded sensors, including force sensing, to monitor interactions with objects. The system will combine mechanical movement, a microcontroller, motor control, and sensor feedback into a functional embedded system. The initial design will focus on reliable grasping, basic force feedback, and easy serviceability, while allowing additional features to be added if time and resources permit.
