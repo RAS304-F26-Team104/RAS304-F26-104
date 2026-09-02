@@ -1,20 +1,21 @@
-#  Team Meeting Schedule
+# Meeting Schedule and Rules
 
-## Weekly Recurring Meetings
-We will meet virtually twice a week during our team's peak 100% availability windows:
-* **Tuesday Sync:** 7:00 PM – 8:30 PM (Virtual)
-* **Thursday Sync:** 7:00 PM – 8:30 PM (Virtual)
-* **Saturday Backup Slot:** 4:00 PM – 7:00 PM *(Only used if the project falls behind schedule)*
+## When we meet
 
----
-
-## Platforms Used
-* **Discord:** Used for daily communication, quick voice syncs, and casual code alignment.
-* **Zoom:** Used for formal project reviews, recording milestone presentations, and screen-sharing troubleshooting sessions.
+* **Tuesday Sync:** 7:00 PM – 8:30 PM (Online)
+* **Thursday Sync:** 7:00 PM – 8:30 PM (Online)
+* **Saturday Backup:** 4:00 PM – 7:00 PM (Only if we are behind)
 
 ---
 
-##  Meeting Rules
-* **15-Minute Rule:** Everyone must set a calendar alert to notify them **15 minutes before** a meeting starts.
-* **24-Hour Notice:** Any request to change or reschedule a meeting must be posted in chat at least **24 hours in advance**.
-* **Rotating Notes:** A different team member each week will take brief notes on what we decided and who is doing what task.
+## Where we meet
+
+* **Discord:** For everyday text updates, quick voice chats, and checking in on software code.
+* **Zoom:** For formal project reviews, recording presentations for class milestones, and troubleshooting bugs when we need to share screens.
+
+---
+
+## Team Rules:
+* **Set reminders:** Everyone needs to turn on push notifications or calendar alerts 15 minutes before meetings start so nobody forgets.
+* **Rescheduling:** If you need to move a meeting, give the group at least 24 hours notice in the chat so we can vote on a new time. 
+* **Meeting notes:** We will rotate the job of taking notes each week. The person assigned will just post a quick summary of what we decided and who is working on what.
