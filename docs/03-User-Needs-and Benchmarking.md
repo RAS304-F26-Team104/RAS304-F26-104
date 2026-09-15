@@ -95,16 +95,22 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 
 | Voice of the Customer | Restated Customer Need                                                              |
 | --- | --- |
-| This is a well-designed and useful gripper for grabbing a wiffle-ball, 2” cube or similar-size objects. It can be ordered with or without a servo. This can be put right on your prototype or spark your creativity for a custom design. It comes with additional screws.| 1. NEEDS HERE |
-| Good quality materials. | 2. NEEDS HERE |
+| This is a well-designed and useful gripper for grabbing a wiffle-ball, 2” cube or similar-size objects. It can be ordered with or without a servo. This can be put right on your prototype or spark your creativity for a custom design. It comes with additional screws.| Gripper jaws open wide enough to accommodate medium sized objects (2 inch objects) (Explicit) |
+||Purchasing options provide flexibility for users with existing actuation options (Explicit)|
+||Design supports rapid mounting and mechanical adaptation to custom platforms (Latent)|
+| Good quality materials. |Structural components are manufactured from durable materials to allow long service life (Explicit)|
+||Materials should resist flexing under operating loads (Latent) |
 | NOTE: NO OTHER USEFUL REVIEWS | |
 
 ##### Negative Comments
 
 | Voice of the Customer | Restated Customer Need                                                              |
 | --- | --- |
-| Meshing gear teeth ONLY exist on the servo driven side. the servo driving side has NO mounting points (claw to base) without a servo. Do not buy this item if you do not have or plan to get a servo to complete it. | 1. NEEDS HERE |
-| I am happy with it, though the gripping function is not too strong with common metal servos. | 1. NEEDS HERE |
+| Meshing gear teeth ONLY exist on the servo driven side. the servo driving side has NO mounting points (claw to base) without a servo. Do not buy this item if you do not have or plan to get a servo to complete it. |Product documentation clarifies hardware dependencies (Explicit)|
+||Structural integritiy should not rely solely on the actuator's output shaft (Latent)|
+||Mechanism should elminate single point drive failure possibilites (Latent)|
+| I am happy with it, though the gripping function is not too strong with common metal servos. |Linkage design should maximize the potential force application from servos (Explicit)|
+||Contact surfaces should be high friction to prevent slipping (Latent)|
 | NOTE: NO OTHER USEFUL REVIEWS | |
 
 
@@ -131,9 +137,15 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 
 | Voice of the Customer | Restated Customer Need|
 | --- | --- |
-| I purchased these grippers as part of a project I am working on to equipment a drone (a pixhawk based coaxial octocopter) with a payload gripper. These grippers assembled nicely and function well. The servo included has a good grip strengh (enough to hold a filled water bottle easily) and the assembly was straight forward and largely self explanatory. My only recommendation to the vendor would be that the instructions were printed in low resolution black and white. given the price tag I would have appreciated a full color print| 1. NEEDS HERE|
-| This is a strong and steady. The claws are aligned. It takes time to install and it’s a good product. | 2. NEEDS HERE |
-| A little time consuming to assemble and very sharp, but it saved our robotics season at the last minute! | 3. NEEDS HERE |
+| I purchased these grippers as part of a project I am working on to equipment a drone (a pixhawk based coaxial octocopter) with a payload gripper. These grippers assembled nicely and function well. The servo included has a good grip strengh (enough to hold a filled water bottle easily) and the assembly was straight forward and largely self explanatory. My only recommendation to the vendor would be that the instructions were printed in low resolution black and white. given the price tag I would have appreciated a full color print| Gripper provides sufficient grip strength to securely hold everyday payloads (Explicit) |
+||Assembly process is intuitive and straightforward (Explicit) |
+||Documentation includes clear instructions (Latent) |
+||System interfaces easily with existing control hardware (Latent) |
+| This is a strong and steady. The claws are aligned. It takes time to install and it’s a good product. | Claws maintain precise alignment during operation (Explicit) |
+||Gripping mechanism is sturdy under load (Explicit) |
+||Assembly is streamlined to minimize installation time (Latent)|
+| A little time consuming to assemble and very sharp, but it saved our robotics season at the last minute! |Components should have safe edges to prevent user injury (Explicit) |
+||Reliable rapid deployment (Latent) |
 
 
 
@@ -141,9 +153,15 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 
 | Voice of the Customer | Restated Customer Need|
 | --- | --- |
-| bearing is missing, it is useless without it. Flimsy, can be called "professional" sarcastically. | 1. NEEDS HERE |
-| he kit is....ok. The stampings are good. No burs or sharp edges. Some of the holes had to be redrilled they didn't line up and everywhere flathead screw were used need to be countersunk Fail enough. But the instructions....the instructions are bad. They are tiny, poorly printed, even more poorly translated and just plain confusing and/or wrong. The pictures on the Amazon page are more useful to help understand how it goes together. | 2. NEEDS HERE |
-| It locks up if you go beyond its range of operation. Open it too far or close it too far.| 3. NEEDS HERE |
+| bearing is missing, it is useless without it. Flimsy, can be called "professional" sarcastically. |Hardware kits need to undergo verified quality control to contain all parts (Explicit) |
+||Structural parts should not flex under operating loads (Explicit)|
+||Pivot points should use durable bearings for dynamic loads (Latent)|
+| the kit is....ok. The stampings are good. No burs or sharp edges. Some of the holes had to be redrilled they didn't line up and everywhere flathead screw were used need to be countersunk Fail enough. But the instructions....the instructions are bad. They are tiny, poorly printed, even more poorly translated and just plain confusing and/or wrong. The pictures on the Amazon page are more useful to help understand how it goes together. |Mounting holes and fastener locations align within tolerances (Explicit) |
+||Countersinks/counterbores should match specified hardware (Explicit)|
+||Assembly manual should be accurate and clear (Explicit)|
+| It locks up if you go beyond its range of operation. Open it too far or close it too far.|Linkages should include physical hard stops to prevent lock-ups (Explicit)|
+||Firmware or servo controller should enforce soft limits to prevent motor burnout from "stalling" (Latent)|
+||Linkages should be backdrieable without seizing if pushed to limits (Latent)|
 
 #### 3. [Force Sensor FSR402 for Arduino, ESP32, ESP8266, Raspberry Pi](https://www.amazon.com/Force-Sensor-Arduino-ESP8266-Raspberry/dp/B0D2K6TVLT?th=1)
 
