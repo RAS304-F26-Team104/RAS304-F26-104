@@ -194,8 +194,8 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 
 | Voice of the Customer | Restated Customer Need|
 | --- | --- |
-| Sensor would drift after long periods of continuous use, values would gradually drift high when the sensor was used for more than 2 hours. | Sensor can include robustness and precision in order to prevent drift. |
-| The force sensor worked well for our project however signals would often bounce due to some electrical malfunction. Was not able to take apart and fix. | Sensor parts need to be robust as to prevent user from debugging an deep electromechanical issue. |
+| Sensor would drift after long periods of continuous use, values would gradually drift high when the sensor was used for more than 2 hours. | Sensor can include robustness and precision in order to prevent drift (Explicit)|
+| The force sensor worked well for our project however signals would often bounce due to some electrical malfunction. Was not able to take apart and fix. | Sensor parts need to be robust as to prevent user from debugging an deep electromechanical issue. (Explicit)|
 | No other useful negative comments | |
 
 
