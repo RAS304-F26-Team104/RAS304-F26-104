@@ -2,6 +2,16 @@
 title: User Needs and Benchmarking
 ---
 
+## Stakeholder Mapping
+
+| Stakeholder                   | Role                                                                      | Key Concerns & Needs                                                                                               |
+| :---------------------------- | :------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------- |
+| **Operator / End User**       | Operates and monitors the gripper during tasks.                           | Sufficient grip force, intuitive operation, safe edges, and rapid deployment.                                      |
+| **Maintainer / Assembler**    | Assembles, services, tunes, and replaces parts on the mechanism.          | Accurate assembly documentation, quality-controlled hardware kits, standardized fasteners, and robust wiring.    |
+| **Firmware / Software Lead**  | Writes motor drivers, closed-loop feedback routines, and calibration code.| Direct ADC sensor interfacing, straightforward signal conditioning, clear reference schematics, and soft limits.  |
+| **Mechanical Integrator**     | Mounts and adapts the gripper mechanism onto custom platforms/robot arms. | Standardized mounting interfaces, tight fastener tolerances, and mechanical stability without relying solely on servos. |
+| **Robot Arm / Host Platform** | Host system (drone or robotic manipulator) bearing the payload.           | Minimal power consumption, low weight, structural rigidity, and no interference with rotating joints.              |
+| **Payload (Target Object)**   | The physical object being handled by the end-effector.                    | Stable gripping without slipping, dynamic compliance for varying stiffness, and non-destructive contact force.   |
 
 ## Expert User Interview
 
@@ -138,7 +148,7 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 | Voice of the Customer | Restated Customer Need|
 | --- | --- |
 | I purchased these grippers as part of a project I am working on to equipment a drone (a pixhawk based coaxial octocopter) with a payload gripper. These grippers assembled nicely and function well. The servo included has a good grip strengh (enough to hold a filled water bottle easily) and the assembly was straight forward and largely self explanatory. My only recommendation to the vendor would be that the instructions were printed in low resolution black and white. given the price tag I would have appreciated a full color print| Gripper provides sufficient grip strength to securely hold everyday payloads (Explicit) |
-||Assembly process is intuitive and straightforward (Explicit) |
+||Assembly process is intuitive and simple (Explicit) |
 ||Documentation includes clear instructions (Latent) |
 ||System interfaces easily with existing control hardware (Latent) |
 | This is a strong and steady. The claws are aligned. It takes time to install and it’s a good product. | Claws maintain precise alignment during operation (Explicit) |
@@ -184,7 +194,7 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 |These FSR402 pressure sensors work fine for DIY projects, but you need to know exactly what board or interface you’re connecting them to. Once paired with the proper resistors and calibrated correctly, they respond well to pressure and are consistent enough for hobby builds. Just expect a bit of trial and error if it’s your first time using force-sensitive resistors.| The sensor provides consistent, repeatable pressure readings once calibrated.|
 | Worked with my esp32 perfectly. It had an adhesive backside that I did not use but is convenient to have just in case. |The sensor integrates with common microcontroller platforms without special adapters. (Explicit)|
 ||Clear reference schematics should be provided (Latent)|
-||Circuit design should allow straightforward signal conditioning, not trial and error tuning (Latent)|
+||Circuit design should allow simple signal conditioning, not trial and error tuning (Latent)|
 | Very helpful for my school project. The sensor was easy to connect and worked well with my Arduino setup. It responded accurately to pressure changes and helped me finish my project successfully. | The sensor provides accurate pressure feedback (Explicit)|
 ||Sensor integrates directly with microcontroller ADC inputs (Explicit)|
 ||Sensor functions consistently under load (Latent)|
@@ -203,24 +213,295 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 
 ### First Placement
 
-| Source                 | Need Statement                                                                               | Category                  | Explicit/Latent|
-| :---                   | :---                                                                                         | :---                      | :---          |
-| Expert Interview       | Gripper provides feedback to grasp objects of varying shapes.                                | Sensing                   | Latent        |
-| Expert Interview       | Grippers accommodate variation in object orientation.                                        | Control                   | Latent        |
-| Expert Interview       | Gripper senses force across its gripping surface.                                            | Sensing                   | Explicit      |
-| Expert Interview       | System performs reliably for short-duration tasks without long-term recalibration.           | Reliability               | Latent        |
-| Expert Interview       | Control algorithm avoids inducing actuator faults.                                           | Control                   | Latent        |
-| Expert Interview       | Force sensor gives graduated (non-binary) feedback.                                          | Sensing                   | Explicit      |
-| Expert Interview       | Sensors perform reliably under real-world conditions.                                        | Environmental             | Latent        |
-| Expert Interview       | Wiring at joints withstands rotation without failure.                                        | Mechanical                | Explicit      |
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Expert Interview                       | Gripper provides feedback to grasp objects of varying shapes.                                | Sensing                  | Latent          |
+| Expert Interview                       | Grippers accommodate variation in object orientation.                                        | Control                  | Latent          |
+| Expert Interview                       | Gripper senses force across its gripping surface.                                            | Sensing                  | Explicit        |
+| Expert Interview                       | System performs reliably for short-duration tasks without long-term recalibration.           | Reliability              | Latent          |
+| Expert Interview                       | Control algorithm avoids inducing actuator faults.                                           | Control                  | Latent          |
+| Expert Interview                       | Force sensor gives graduated (non-binary) feedback.                                          | Sensing                  | Explicit        |
+| Expert Interview                       | Sensors perform reliably under real-world conditions.                                        | Environmental            | Latent          |
+| Expert Interview                       | Wiring at joints withstands rotation without failure.                                        | Mechanical               | Explicit        |
+| Product 1 (Mechanical Claw)            | Gripper jaws open wide enough to accommodate medium sized objects (2 inch objects).          | Mechanical               | Explicit        |
+| Product 1 (Mechanical Claw)            | Purchasing options provide flexibility for users with existing actuation options.            | Usability / Integration  | Explicit        |
+| Product 1 (Mechanical Claw)            | Design supports rapid mounting and mechanical adaptation to custom platforms.                | Mechanical / Integration | Latent          |
+| Product 1 (Mechanical Claw)            | Structural components are manufactured from durable materials to allow long service life.    | Durability / Materials   | Explicit        |
+| Product 1 (Mechanical Claw)            | Materials should resist flexing under operating loads.                                       | Mechanical / Structure   | Latent          |
+| Product 1 (Mechanical Claw)            | Product documentation clarifies hardware dependencies.                                       | Documentation            | Explicit        |
+| Product 1 (Mechanical Claw)            | Structural integrity should not rely solely on the actuator's output shaft.                  | Mechanical               | Latent          |
+| Product 1 (Mechanical Claw)            | Mechanism should eliminate single point drive failure possibilities.                         | Reliability              | Latent          |
+| Product 1 (Mechanical Claw)            | Linkage design should maximize the potential force application from servos.                  | Mechanical               | Explicit        |
+| Product 1 (Mechanical Claw)            | Contact surfaces should be high friction to prevent slipping.                                | Usability / Materials    | Latent          |
+| Product 2 (Metal Claw with Servo)      | Gripper provides sufficient grip strength to securely hold everyday payloads.                | Performance              | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Assembly process is intuitive and simple.                                           | Usability                | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Documentation includes clear instructions.                                                   | Documentation            | Latent          |
+| Product 2 (Metal Claw with Servo)      | System interfaces easily with existing control hardware.                                     | Integration              | Latent          |
+| Product 2 (Metal Claw with Servo)      | Claws maintain precise alignment during operation.                                           | Mechanical               | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Gripping mechanism is sturdy under load.                                                     | Mechanical / Durability  | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Assembly is streamlined to minimize installation time.                                       | Usability                | Latent          |
+| Product 2 (Metal Claw with Servo)      | Components should have safe edges to prevent user injury.                                    | Safety                   | Explicit        |
+| Product 2 (Metal Claw with Servo)      | System provides reliable rapid deployment.                                                   | Reliability              | Latent          |
+| Product 2 (Metal Claw with Servo)      | Hardware kits need to undergo verified quality control to contain all parts.                 | Quality Control          | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Structural parts should not flex under operating loads.                                      | Mechanical / Durability  | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Pivot points should use durable bearings for dynamic loads.                                  | Mechanical               | Latent          |
+| Product 2 (Metal Claw with Servo)      | Mounting holes and fastener locations align within tolerances.                               | Manufacturing / Quality  | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Countersinks/counterbores should match specified hardware.                                   | Manufacturing / Mechanical | Explicit      |
+| Product 2 (Metal Claw with Servo)      | Assembly manual should be accurate and clear.                                                | Documentation            | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Linkages should include physical hard stops to prevent lock-ups.                             | Mechanical / Safety      | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Firmware or servo controller should enforce soft limits to prevent motor burnout from stalling.| Control / Electrical   | Latent          |
+| Product 2 (Metal Claw with Servo)      | Linkages should be backdrivable without seizing if pushed to limits.                         | Mechanical               | Latent          |
+| Product 3 (FSR402 Sensor)              | The sensor provides consistent, repeatable pressure readings once calibrated.                | Sensing                  | Latent          |
+| Product 3 (FSR402 Sensor)              | The sensor integrates with common microcontroller platforms without special adapters.        | Electrical / Integration | Explicit        |
+| Product 3 (FSR402 Sensor)              | Clear reference schematics should be provided.                                               | Documentation            | Latent          |
+| Product 3 (FSR402 Sensor)              | Circuit design should allow simple signal conditioning, not trial and error tuning. | Electrical               | Latent          |
+| Product 3 (FSR402 Sensor)              | The sensor provides accurate pressure feedback.                                              | Sensing                  | Explicit        |
+| Product 3 (FSR402 Sensor)              | Sensor integrates directly with microcontroller ADC inputs.                                  | Electrical / Integration | Explicit        |
+| Product 3 (FSR402 Sensor)              | Sensor functions consistently under load.                                                    | Reliability              | Latent          |
+| Product 3 (FSR402 Sensor)              | Sensor includes robustness and precision in order to prevent drift over time.                | Sensing / Reliability    | Explicit        |
+| Product 3 (FSR402 Sensor)              | Sensor parts need to be robust to prevent users from having to debug deep electromechanical issues. | Reliability / Durability | Explicit |
 
 ### Grouped with categories
+#### Sensing
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Expert Interview                       | Gripper provides feedback to grasp objects of varying shapes.                                | Sensing                  | Latent          |
+| Expert Interview                       | Gripper senses force across its gripping surface.                                            | Sensing                  | Explicit        |
+| Expert Interview                       | Force sensor gives graduated (non-binary) feedback.                                          | Sensing                  | Explicit        |
+| Product 3 (FSR402 Sensor)              | The sensor provides consistent, repeatable pressure readings once calibrated.                | Sensing                  | Latent          |
+| Product 3 (FSR402 Sensor)              | The sensor provides accurate pressure feedback.                                              | Sensing                  | Explicit        |
+| Product 3 (FSR402 Sensor)              | Sensor includes robustness and precision in order to prevent drift over time.                | Sensing / Reliability    | Explicit        |
+
+#### Control
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Expert Interview                       | Grippers accommodate variation in object orientation.                                        | Control                  | Latent          |
+| Expert Interview                       | Control algorithm avoids inducing actuator faults.                                           | Control                  | Latent          |
+| Product 2 (Metal Claw with Servo)      | Firmware or servo controller should enforce soft limits to prevent motor burnout from stalling.| Control / Electrical   | Latent          |
+
+#### Mechanical
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Expert Interview                       | Wiring at joints withstands rotation without failure.                                        | Mechanical               | Explicit        |
+| Product 1 (Mechanical Claw)            | Gripper jaws open wide enough to accommodate medium sized objects (2 inch objects).          | Mechanical               | Explicit        |
+| Product 1 (Mechanical Claw)            | Design supports rapid mounting and mechanical adaptation to custom platforms.                | Mechanical / Integration | Latent          |
+| Product 1 (Mechanical Claw)            | Materials should resist flexing under operating loads.                                       | Mechanical / Structure   | Latent          |
+| Product 1 (Mechanical Claw)            | Structural integrity should not rely solely on the actuator's output shaft.                  | Mechanical               | Latent          |
+| Product 1 (Mechanical Claw)            | Linkage design should maximize the potential force application from servos.                  | Mechanical               | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Claws maintain precise alignment during operation.                                           | Mechanical               | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Gripping mechanism is sturdy under load.                                                     | Mechanical / Durability  | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Structural parts should not flex under operating loads.                                      | Mechanical / Durability  | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Pivot points should use durable bearings for dynamic loads.                                  | Mechanical               | Latent          |
+| Product 2 (Metal Claw with Servo)      | Countersinks/counterbores should match specified hardware.                                   | Manufacturing / Mechanical | Explicit      |
+| Product 2 (Metal Claw with Servo)      | Linkages should include physical hard stops to prevent lock-ups.                             | Mechanical / Safety      | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Linkages should be backdrivable without seizing if pushed to limits.                         | Mechanical               | Latent          |
+
+#### Reliability
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Expert Interview                       | System performs reliably for short-duration tasks without long-term recalibration.           | Reliability              | Latent          |
+| Product 1 (Mechanical Claw)            | Mechanism should eliminate single point drive failure possibilities.                         | Reliability              | Latent          |
+| Product 2 (Metal Claw with Servo)      | System provides reliable rapid deployment.                                                   | Reliability              | Latent          |
+| Product 3 (FSR402 Sensor)              | Sensor functions consistently under load.                                                    | Reliability              | Latent          |
+| Product 3 (FSR402 Sensor)              | Sensor includes robustness and precision in order to prevent drift over time.                | Sensing / Reliability    | Explicit        |
+| Product 3 (FSR402 Sensor)              | Sensor parts need to be robust to prevent users from having to debug deep electromechanical issues. | Reliability / Durability | Explicit |
+
+#### Electrical & Integration
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Product 1 (Mechanical Claw)            | Purchasing options provide flexibility for users with existing actuation options.            | Usability / Integration  | Explicit        |
+| Product 1 (Mechanical Claw)            | Design supports rapid mounting and mechanical adaptation to custom platforms.                | Mechanical / Integration | Latent          |
+| Product 2 (Metal Claw with Servo)      | System interfaces easily with existing control hardware.                                     | Integration              | Latent          |
+| Product 2 (Metal Claw with Servo)      | Firmware or servo controller should enforce soft limits to prevent motor burnout from stalling.| Control / Electrical   | Latent          |
+| Product 3 (FSR402 Sensor)              | The sensor integrates with common microcontroller platforms without special adapters.       | Electrical / Integration | Explicit        |
+| Product 3 (FSR402 Sensor)              | Circuit design should allow simple signal conditioning, not trial and error tuning. | Electrical               | Latent          |
+| Product 3 (FSR402 Sensor)              | Sensor integrates directly with microcontroller ADC inputs.                                  | Electrical / Integration | Explicit        |
+
+#### Usability & Safety
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Product 1 (Mechanical Claw)            | Purchasing options provide flexibility for users with existing actuation options.            | Usability / Integration  | Explicit        |
+| Product 1 (Mechanical Claw)            | Contact surfaces should be high friction to prevent slipping.                                | Usability / Materials    | Latent          |
+| Product 2 (Metal Claw with Servo)      | Assembly process is intuitive and simple.                                           | Usability                | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Assembly is streamlined to minimize installation time.                                       | Usability                | Latent          |
+| Product 2 (Metal Claw with Servo)      | Components should have safe edges to prevent user injury.                                    | Safety                   | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Linkages should include physical hard stops to prevent lock-ups.                             | Mechanical / Safety      | Explicit        |
+
+#### Materials & Durability
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Product 1 (Mechanical Claw)            | Structural components are manufactured from durable materials to allow long service life.    | Durability / Materials   | Explicit        |
+| Product 1 (Mechanical Claw)            | Materials should resist flexing under operating loads.                                       | Mechanical / Structure   | Latent          |
+| Product 1 (Mechanical Claw)            | Contact surfaces should be high friction to prevent slipping.                                | Usability / Materials    | Latent          |
+| Product 2 (Metal Claw with Servo)      | Gripping mechanism is sturdy under load.                                                     | Mechanical / Durability  | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Structural parts should not flex under operating loads.                                      | Mechanical / Durability  | Explicit        |
+| Product 3 (FSR402 Sensor)              | Sensor parts need to be robust to prevent users from having to debug deep electromechanical issues. | Reliability / Durability | Explicit |
+
+#### Documentation
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Product 1 (Mechanical Claw)            | Product documentation clarifies hardware dependencies.                                       | Documentation            | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Documentation includes clear instructions.                                                   | Documentation            | Latent          |
+| Product 2 (Metal Claw with Servo)      | Assembly manual should be accurate and clear.                                                | Documentation            | Explicit        |
+| Product 3 (FSR402 Sensor)              | Clear reference schematics should be provided.                                               | Documentation            | Latent          |
+
+#### Manufacturing & Quality Control
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Product 2 (Metal Claw with Servo)      | Hardware kits need to undergo verified quality control to contain all parts.                 | Quality Control          | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Mounting holes and fastener locations align within tolerances.                               | Manufacturing / Quality  | Explicit        |
+| Product 2 (Metal Claw with Servo)      | Countersinks/counterbores should match specified hardware.                                   | Manufacturing / Mechanical | Explicit      |
+
+#### Performance & Environment
+
+| Source                                 | Need Statement                                                                               | Category                 | Explicit/Latent |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- | :-------------- |
+| Expert Interview                       | Sensors perform reliably under real world conditions.                                        | Environmental            | Latent          |
+| Product 2 (Metal Claw with Servo)      | Gripper provides sufficient grip strength to securely hold everyday payloads.                | Performance              | Explicit        |
+
 
 ### Ranked
 
+
+#### Critical (Primary functions and core project goals)
+| Source                                 | Need Statement                                                                               | Category                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- |
+| Product 2 (Metal Claw with Servo)      | Gripper provides sufficient grip strength to securely hold everyday payloads.                | Performance              |
+| Expert Interview                       | Gripper senses force across its gripping surface.                                            | Sensing                  |
+| Expert Interview                       | Force sensor gives graduated (non-binary) feedback.                                          | Sensing                  |
+| Product 2 (Metal Claw with Servo)      | Firmware or servo controller should enforce soft limits to prevent motor burnout from stalling.| Control / Electrical   |
+| Product 2 (Metal Claw with Servo)      | Linkages should include physical hard stops to prevent lock-ups.                             | Mechanical / Safety      |
+
+#### High (Essential interfacing and electrical architecture)
+| Source                                 | Need Statement                                                                               | Category                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- |
+| Product 3 (FSR402 Sensor)              | Sensor integrates directly with microcontroller ADC inputs.                                  | Electrical / Integration |
+| Product 3 (FSR402 Sensor)              | Circuit design should allow simple signal conditioning, not trial and error tuning. | Electrical               |
+| Product 3 (FSR402 Sensor)              | The sensor provides accurate pressure feedback.                                              | Sensing                  |
+| Product 3 (FSR402 Sensor)              | The sensor provides consistent, repeatable pressure readings once calibrated.                | Sensing                  |
+| Expert Interview                       | Wiring at joints withstands rotation without failure.                                        | Mechanical               |
+| Product 1 (Mechanical Claw)            | Linkage design should maximize the potential force application from servos.                  | Mechanical               |
+| Product 2 (Metal Claw with Servo)      | Claws maintain precise alignment during operation.                                           | Mechanical               |
+| Product 2 (Metal Claw with Servo)      | Gripping mechanism is sturdy under load.                                                     | Mechanical / Durability  |
+| Product 1 (Mechanical Claw)            | Structural integrity should not rely solely on the actuator's output shaft.                  | Mechanical               |
+| Product 1 (Mechanical Claw)            | Contact surfaces should be high friction to prevent slipping.                                | Usability / Materials    |
+| Expert Interview                       | Control algorithm avoids inducing actuator faults.                                           | Control                  |
+
+#### Medium (Adaptability, functionality, longevitiy, stability)
+| Source                                 | Need Statement                                                                               | Category                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- |
+| Expert Interview                       | Gripper provides feedback to grasp objects of varying shapes.                                | Sensing                  |
+| Expert Interview                       | Grippers accommodate variation in object orientation.                                        | Control                  |
+| Product 1 (Mechanical Claw)            | Gripper jaws open wide enough to accommodate medium sized objects (2 inch objects).          | Mechanical               |
+| Product 3 (FSR402 Sensor)              | Sensor includes robustness and precision in order to prevent drift over time.                | Sensing / Reliability    |
+| Product 3 (FSR402 Sensor)              | Sensor parts need to be robust to prevent users from having to debug deep electromechanical issues. | Reliability / Durability |
+| Product 1 (Mechanical Claw)            | Structural components are manufactured from durable materials to allow long service life.    | Durability / Materials   |
+| Product 1 (Mechanical Claw)            | Materials should resist flexing under operating loads.                                       | Mechanical / Structure   |
+| Product 2 (Metal Claw with Servo)      | Structural parts should not flex under operating loads.                                      | Mechanical / Durability  |
+| Product 2 (Metal Claw with Servo)      | Mounting holes and fastener locations align within tolerances.                               | Manufacturing / Quality  |
+| Product 2 (Metal Claw with Servo)      | Countersinks/counterbores should match specified hardware.                                   | Manufacturing / Mechanical|
+| Product 2 (Metal Claw with Servo)      | Pivot points should use durable bearings for dynamic loads.                                  | Mechanical               |
+| Product 2 (Metal Claw with Servo)      | Linkages should be backdrivable without seizing if pushed to limits.                         | Mechanical               |
+| Expert Interview                       | Sensors perform reliably under real-world conditions.                                        | Environmental            |
+| Expert Interview                       | System performs reliably for short-duration tasks without long-term recalibration.           | Reliability              |
+| Product 3 (FSR402 Sensor)              | Sensor functions consistently under load.                                                    | Reliability              |
+| Product 1 (Mechanical Claw)            | Mechanism should eliminate single point drive failure possibilities.                         | Reliability              |
+
+#### Low (Convenience and Assembly factors)
+| Source                                 | Need Statement                                                                               | Category                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- | :----------------------- |
+| Product 2 (Metal Claw with Servo)      | System interfaces easily with existing control hardware.                                     | Integration              |
+| Product 3 (FSR402 Sensor)              | The sensor integrates with common microcontroller platforms without special adapters.        | Electrical / Integration |
+| Product 1 (Mechanical Claw)            | Design supports rapid mounting and mechanical adaptation to custom platforms.                | Mechanical / Integration |
+| Product 2 (Metal Claw with Servo)      | Components should have safe edges to prevent user injury.                                    | Safety                   |
+| Product 2 (Metal Claw with Servo)      | Assembly process is intuitive and simple.                                           | Usability                |
+| Product 2 (Metal Claw with Servo)      | Assembly is streamlined to minimize installation time                                        | Usability                |
+
+
+
 ## Compiled list of user Needs
 
-1. The device will...
-1. The device is ...
-1. The device can ...
-100. The device is...
+1. The device will provide feedback to grasp objects of varying shapes.
+2. The device can accommodate variations in object orientation.
+3. The device will sense force across its gripping surface.
+4. The device will perform reliably for short duration tasks without long term recalibration.
+5. The device will use a control algorithm that avoids inducing actuator faults.
+6. The device will give graduated (non binary) force feedback.
+7. The device will perform reliably under real world environmental conditions.
+8. The device will feature wiring at joints that withstands rotation without failure.
+9. The device can open its jaws wide enough to accommodate medium sized objects (e.g., 2 inch objects).
+10. The device will offer purchasing options that provide flexibility for users with existing actuation options.
+11. The device can support rapid mounting and mechanical adaptation to custom platforms.
+12. The device is manufactured from durable materials to allow a long service life.
+13. The device will resist flexing under operating loads.
+14. The device will include product documentation that clearly defines hardware dependencies.
+15. The device will not rely solely on the actuator's output shaft for structural integrity.
+16. The device will feature a mechanism that eliminates single point drive failure possibilities.
+17. The device will feature a linkage design that maximizes the potential force application from servos.
+18. The device will have high friction contact surfaces to prevent slipping.
+19. The device will provide sufficient grip strength to securely hold everyday payloads.
+20. The device is designed for an intuitive and simple assembly process.
+21. The device will include clear instructions in its documentation.
+22. The device can interface easily with existing control hardware.
+23. The device will maintain precise claw alignment during operation.
+24. The device is sturdy under load.
+25. The device is streamlined to minimize installation time.
+26. The device will have safe edges on all components to prevent user injury.
+27. The device can be reliably and rapidly deployed.
+28. The device will undergo verified quality control to ensure kits contain all necessary parts.
+29. The device's structural parts will not flex under operating loads.
+30. The device will use durable bearings at pivot points to handle dynamic loads.
+31. The device will have mounting holes and fastener locations that align within tight tolerances.
+32. The device will have countersinks and counterbores that perfectly match specified hardware.
+33. The device will come with an accurate and clear assembly manual.
+34. The device will include physical hard stops in its linkages to prevent lockups.
+35. The device will enforce soft limits via firmware or servo controllers to prevent motor burnout from stalling.
+36. The device can be back driven without seizing if pushed to its physical limits.
+37. The device will provide consistent, repeatable pressure readings once calibrated.
+38. The device can integrate with common microcontroller platforms without the need for special adapters.
+39. The device will be accompanied by clear reference schematics.
+40. The device's circuit design will allow for simple signal conditioning rather than trial and error tuning.
+41. The device will provide accurate pressure feedback.
+42. The device can integrate directly with microcontroller ADC inputs.
+43. The device will function consistently under load.
+44. The device is robust and precise in order to prevent signal drift over time.
+45. The device is physically robust to prevent users from having to debug deep electromechanical issues.
+46. The device will provide tactile feedback about the object being gripped.
+47. The device can adapt to targets that vary significantly in physical shape.
+48. The device can successfully accommodate objects presented in various orientations.
+49. The device will exhibit high dexterity to handle complex grasping tasks.
+50. The device will use a dynamic touch array to gather spatial force data.
+51. The device will perform reliably for short duration tasks without requiring long term, multi day calibration.
+52. The device will support hard coded Cartesian coordinates for highly repeatable tasks.
+53. The device will track the exact closure amount of the gripping mechanism.
+54. The device will rely on a robust grasping algorithm to prevent actuator faults.
+55. The device will measure grip force precisely rather than relying on binary contact detection.
+56. The device will maintain sensor accuracy even when operating outside of strictly controlled environments.
+57. The device will feature wiring routing that does not interfere with the motion of the joints.
+58. The device will feature connectors that remain unaffected by continuous joint rotation.
+59. The device will use rolling contact joint principles to minimize wiring stress during actuation.
+60. The device will mimic the sensory and dexterity considerations of human grasping.
+61. The device will use an adaptive control strategy rather than relying solely on model based control.
+62. The device can safely handle and adjust to objects of varying stiffness.
+63. The device will adjust its grip dynamically as the target object is pressed and deformed.
+64. The device will react to sensor input in real time to update its control loop.
+65. The device will isolate its sensing elements from environmental vibrations.
+66. The device will maintain stable readings regardless of ambient temperature fluctuations.
+67. The device will provide deterministic feedback to ensure an object is grasped exactly the same way during repeated attempts.
+68. The device can successfully grasp targets despite varying initial conditions.
+69. The device will adjust its approach for objects that are aligned differently during each pickup attempt.
+70. The device will be cost effective to accommodate standard university research budgets.
+71. The device is priced significantly below the standard two thousand dollar industrial sensor baseline.
+72. The device is designed for simple physical assembly of the sensing components.
+73. The device will integrate its sensors with the broader robotics system.
+74. The device is accessible for integration and operation by less experienced students and researchers.
+75. The device will process precise force inputs to correctly identify whether a failed grasp was due to a sensor fault or an actuator fault.
