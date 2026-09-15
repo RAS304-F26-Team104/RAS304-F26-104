@@ -191,13 +191,9 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 
 | Voice of the Customer | Restated Customer Need|
 | --- | --- |
-| bearing is missing, it is useless without it. Flimsy, can be called "professional" sarcastically. | 1. NEEDS HERE |
-| he kit is....ok. The stampings are good. No burs or sharp edges. Some of the holes had to be redrilled they didn't line up and everywhere flathead screw were used need to be countersunk Fail enough. But the instructions....the instructions are bad. They are tiny, poorly printed, even more poorly translated and just plain confusing and/or wrong. The pictures on the Amazon page are more useful to help understand how it goes together. | 2. NEEDS HERE |
-| It locks up if you go beyond its range of operation. Open it too far or close it too far.| 3. NEEDS HERE |
-
-#### 4. Next Product goes here
-
-#### 5. Next Product goes here
+| Sensor would drift after long periods of continuous use, values would gradually drift high when the sensor was used for more than 2 hours. | Sensor can include robustness and precision in order to prevent drift. |
+| The force sensor worked well for our project however signals would often bounce due to some electrical malfunction. Was not able to take apart and fix. | Sensor parts need to be robust as to prevent user from debugging an deep electromechanical issue. |
+| No other useful negative comments | |
 
 
 ## Organized Need Statements
