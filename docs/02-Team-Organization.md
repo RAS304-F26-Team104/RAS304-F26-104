@@ -48,7 +48,7 @@ We will communicate primarily through cell and discord with a group chat of all 
 ### Team Member Communication Modes
 
 | Name     | First Choice | Second Choice | Third Choice |
-|----------|:------------:|:--------------:|:--------------:|
+|----------|:------------:|:--------------:|:----------------:|
 | Jared    | Cell         | Discord         | Email           |
 | Ash      | Discord      | Cell            | Email           |
 | Joseph   | Cell         | Discord         | Email           |
@@ -66,10 +66,6 @@ We will communicate openly and effectively, and be supportive as a group. Each t
 How will we handle feedback and correspondence?
 
 We will do our best to maintain course and steady progress throughout the semester. Jared and Ash will be the primary point of contact for Professor Vivek and the TA. All correspondence will be shared promptly with all group members.
-
-
-
-
 
 
 ## Conflict Recoginition and Resolution
