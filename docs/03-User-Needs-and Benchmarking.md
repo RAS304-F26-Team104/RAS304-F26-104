@@ -182,9 +182,12 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 | Voice of the Customer | Restated Customer Need|
 | --- | --- |
 |These FSR402 pressure sensors work fine for DIY projects, but you need to know exactly what board or interface you’re connecting them to. Once paired with the proper resistors and calibrated correctly, they respond well to pressure and are consistent enough for hobby builds. Just expect a bit of trial and error if it’s your first time using force-sensitive resistors.| The sensor provides consistent, repeatable pressure readings once calibrated.|
-| Worked with my esp32 perfectly. It had an adhesive backside that I did not use but is convenient to have just in case. |The sensor integrates with common microcontroller platforms without special adapters. |
-| Very helpful for my school project. The sensor was easy to connect and worked well with my Arduino setup. It responded accurately to pressure changes and helped me finish my project successfully. | The sensor provides accurate pressure feedback for first-time users. |
-
+| Worked with my esp32 perfectly. It had an adhesive backside that I did not use but is convenient to have just in case. |The sensor integrates with common microcontroller platforms without special adapters. (Explicit)|
+||Clear reference schematics should be provided (Latent)|
+||Circuit design should allow straightforward signal conditioning, not trial and error tuning (Latent)|
+| Very helpful for my school project. The sensor was easy to connect and worked well with my Arduino setup. It responded accurately to pressure changes and helped me finish my project successfully. | The sensor provides accurate pressure feedback (Explicit)|
+||Sensor integrates directly with microcontroller ADC inputs (Explicit)|
+||Sensor functions consistently under load (Latent)|
 
 
 ##### Negative Comments
