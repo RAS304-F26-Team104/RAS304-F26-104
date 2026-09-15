@@ -68,6 +68,79 @@ How will we handle feedback and correspondence?
 We will do our best to maintain course and steady progress throughout the semester. Jared and Ash will be the primary point of contact for Professor Vivek and the TA. All correspondence will be shared promptly with all group members.
 
 
+# Meeting Schedule and Rules
+
+## When we meet
+
+* **Tuesday Sync:** 7:00 PM – 8:30 PM (Online)
+* **Thursday Sync:** 7:00 PM – 8:30 PM (Online)
+* **Saturday Backup:** 4:00 PM – 7:00 PM (Only if we are behind)
+
+---
+
+## Where we meet
+
+* **Discord:** For everyday text updates, quick voice chats, and checking in on software code.
+* **Zoom:** For formal project reviews, recording presentations for class milestones, and troubleshooting bugs when we need to share screens.
+
+---
+
+## Team Rules:
+* **Set reminders:** Everyone needs to turn on push notifications or calendar alerts 15 minutes before meetings start so nobody forgets.
+* **Rescheduling:** If you need to move a meeting, give the group at least 24 hours notice in the chat so we can vote on a new time. 
+* **Meeting notes:** We will rotate the job of taking notes each week. The person assigned will just post a quick summary of what we decided and who is working on what.
+
+
+
+# Team Roles and Responsibilities
+
+## Who is doing what?
+
+* **Meeting Leader (Jared):** Sets up our Zoom and Discord links, drops an agenda before we meet, and keeps the group chat on track during our calls.
+* **Meeting Recorder (Joseph):** Takes quick notes during our syncs, tracks who showed up, and posts the action items so everyone knows what they need to work on.
+* **Assignment Leaders (Sakiya & Ash):** Look over the grading rubrics, collect everyone's individual parts, and double-check everything before submitting to Canvas on time.
+* **Project Monitor (Emmanuel):** Keeps an eye on our project timeline and Gantt chart, tracks upcoming deadlines, and drops a reminder in the chat if we start falling behind.
+
+---
+
+## How we plan to manage roles
+
+### How often will we switch jobs?
+We'll rotate these positions every two weeks. That way, everyone gets a fair chance to try out different roles, but we stay on a job long enough to actually get used to it.
+
+### How do we pick who gets what role?
+We started out based on what people were down to try first. For the rest of the semester, we will just follow a set rotation order. If two people want the same job down the road, we'll just flip a coin or vote on it in Discord.
+
+### How will we help each other out?
+If you're stuck, drowning in homework for another class, or having a rough week, just say something in the Discord chat as soon as you can. We have each other's backs, so someone else will step in and help carry the load until things settle down. We'll also do a quick mid-week progress check so nobody gets left behind right before a deadline.
+
+### What happens if we need to adjust on the fly?
+If an emergency happens or someone gets sick, we'll talk about it during our Tuesday sync. The Project Monitor or Meeting Leader will temporarily reassign those duties to someone else for the week so we don't miss our milestone deadlines.
+
+### How are we tracking our tasks?
+We track all ongoing action items and project milestones through structured status updates in our dedicated Discord communication server. Team members log their progress and post systematic text updates directly in the channel. This ensures immediate team visibility and provides a clear, documented reminder system for all upcoming task deadlines.
+
+### How will we split up the engineering/technical work?
+For coding, CAD design, and writing up documentation, we will divide the work based on what people are good at or what they want to learn. Every Thursday, we will map out the technical tasks for the week and split them up evenly so the workload stays fair for everyone.
+
+
+## Team Coordination & Accountability
+
+### Maintaining Progress and Deadlines
+
+We will have two meetings weekly to make sure we are making steady progress and seeking feedback for any hurdles met throughout the process. Before each assignment is submitted, all team members will review the final draft and confirm they are satisfied with it, acting as a "sign-off" before submission. It is typical that each student may have a little more experience with different aspects needed to complete a project like this; we will ensure everyone has a role they feel suited for and place emphasis on open communication and collaboration. If a member lacks confidence or experience in a specific area, other team members with relevant knowledge will help walk them through it so no one falls behind.
+
+Feedback from design reviews will be shared with the full team immediately after each review, along with a summary of required changes and who is responsible for addressing them. We will discuss the feedback as a group to make sure everyone understands what needs to change and why.
+
+### Maintaining Accountability
+
+Team members will be held accountable if they are not contributing and are causing the group to miss deadlines. Everyone is free to voice concerns to each other directly, and we will address issues early rather than letting them build up.
+
+Underperformance will typically show up as missed meetings, missed deadlines, or a lack of communication about progress on assigned tasks. If a team member is underperforming, we will first check in with them privately to understand what's going on and see if we can help, whether that means redistributing work, offering guidance, or adjusting their role. If the issue continues after that conversation, we will address it as a group.
+
+For team members who consistently do not contribute despite these efforts, we will make the instructor aware and work to ensure the project can still be completed to its full capacity.
+
+
 ## Conflict Recoginition and Resolution
 
 - Differences of opinion among project team members are common. Because of this, the question here is not how you will avoid these issues, but how you will handle them to accomplish your team mission.
