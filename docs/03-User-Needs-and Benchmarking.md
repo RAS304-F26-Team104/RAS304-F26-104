@@ -145,7 +145,37 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 | he kit is....ok. The stampings are good. No burs or sharp edges. Some of the holes had to be redrilled they didn't line up and everywhere flathead screw were used need to be countersunk Fail enough. But the instructions....the instructions are bad. They are tiny, poorly printed, even more poorly translated and just plain confusing and/or wrong. The pictures on the Amazon page are more useful to help understand how it goes together. | 2. NEEDS HERE |
 | It locks up if you go beyond its range of operation. Open it too far or close it too far.| 3. NEEDS HERE |
 
-#### 3. Next Product goes here
+#### 3. [Force Sensor FSR402 for Arduino, ESP32, ESP8266, Raspberry Pi](https://www.amazon.com/Force-Sensor-Arduino-ESP8266-Raspberry/dp/B0D2K6TVLT?th=1)
+
+![Force Sensor FSR402](https://m.media-amazon.com/images/I/71rJGapC+VL._SX522_.jpg)
+
+* Vendor: Amazon
+
+* Description:
+- Detects force or pressure applied to its surface
+- Flexible construction for varied applications
+- The higher the pressure, the lower the resistance.
+- Compatible with breaboard
+- Self-adhesive tape on the back, make it stickable
+
+
+##### Positive Comments
+
+| Voice of the Customer | Restated Customer Need|
+| --- | --- |
+|These FSR402 pressure sensors work fine for DIY projects, but you need to know exactly what board or interface you’re connecting them to. Once paired with the proper resistors and calibrated correctly, they respond well to pressure and are consistent enough for hobby builds. Just expect a bit of trial and error if it’s your first time using force-sensitive resistors.| The sensor provides consistent, repeatable pressure readings once calibrated.|
+| Worked with my esp32 perfectly. It had an adhesive backside that I did not use but is convenient to have just in case. |The sensor integrates with common microcontroller platforms without special adapters. |
+| Very helpful for my school project. The sensor was easy to connect and worked well with my Arduino setup. It responded accurately to pressure changes and helped me finish my project successfully. | The sensor provides accurate pressure feedback for first-time users. |
+
+
+
+##### Negative Comments
+
+| Voice of the Customer | Restated Customer Need|
+| --- | --- |
+| bearing is missing, it is useless without it. Flimsy, can be called "professional" sarcastically. | 1. NEEDS HERE |
+| he kit is....ok. The stampings are good. No burs or sharp edges. Some of the holes had to be redrilled they didn't line up and everywhere flathead screw were used need to be countersunk Fail enough. But the instructions....the instructions are bad. They are tiny, poorly printed, even more poorly translated and just plain confusing and/or wrong. The pictures on the Amazon page are more useful to help understand how it goes together. | 2. NEEDS HERE |
+| It locks up if you go beyond its range of operation. Open it too far or close it too far.| 3. NEEDS HERE |
 
 #### 4. Next Product goes here
 
