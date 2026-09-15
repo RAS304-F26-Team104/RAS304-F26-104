@@ -2,55 +2,112 @@
 title: User Needs and Benchmarking
 ---
 
+
+## Expert User Interview
+
+* **Interviewee:** Rajdeep Adak
+* **Credentials:** PhD candidate - Robotics, Control Systems, Advanced Manufacturing
+* **Format:** In person
+* **Date:** 9-14-26
+
+---
+
+## Questions Asked & Responses
+
+**Q1. What's your experience with grippers or force/pressure sensors?**  
+Worked on both grippers and force/pressure sensors in industry and research environments.
+
+**Q2. What's the most common failure mode you've seen in grip force sensors (drift, noise, wear)?**  
+The most common issue is a lack of feedback about the object being gripped, especially since objects vary in shape and must be oriented correctly. This comes down to dexterity and the lack of adequate feedback.
+
+**Q3. What sensing method would you recommend (FSR, strain gauge, load cell) and why?**  
+Dynamic touch arrays are the most common sensing method used for robotic hands, and most industrial robotic hands use them.
+
+**Q4. How do you handle sensor drift or calibration over time?**  
+For long-term reliability, industry often avoids force sensors altogether and instead hard-codes robotic tasks for example, an object placed in the same position on an assembly line, where the robot moves to known Cartesian coordinates and closes its gripper by a known amount. For our application, long-term reliability (over hours or days) is not a major concern.
+
+**Q5. How do you detect whether a grasp failed due to a sensor fault vs. an actuator fault?**  
+Actuator faults are highly dependent on the grasping algorithm, if the algorithm is faulty, the actuator is likely to fail as a result. Gripping an object with the right amount of force can't be treated as a binary outcome, sensing has to be precise. Sensors typically fail when there's a lack of a controlled environment.
+
+**Q6. What wiring/connector issues have you seen at moving joints?**  
+As joints rotate, wires and connectors must not interfere with the joint's motion or be affected by it. Rolling contact joints are common in industry and are used to minimize wiring issues at joints that must rotate precisely. Whatever challenges humans face with gripping, you must consider when building a sensor.
+
+**Q7. What's a good control strategy for grasping objects of varying stiffness?**  
+Model-based control does not perform well for this. An adaptive control strategy is needed, one that can adjust as the object is pressed and react to sensor input in real time.
+
+**Q8. What environmental factors (dust, temp, vibration) cause the most problems?**  
+Vibration causes the most problems. Temperature is also a factor for IMU-based sensors. The biggest challenge in this research has been deterministic feedback, or whether an object is grasped the exact same way each time it's grabbed again. Initial conditions also matter significantly. Some objects that need to be grasped are often aligned differently every time your end-effector is going to pick them up.
+
+**Q9. What's the biggest sourcing/cost/assembly headache with force sensors?**  
+Cost is a major challenge, industrial-grade force sensors start at a minimum of about $2,000 each, which is difficult for research budgets. Assembly of the sensors themselves is not too difficult but integrating them with the robotics system is a significant challenge, especially for less experienced students and researchers.
+
+---
+
 ## Voice of the Customer Benchmarking Example
 
 ### Search #1
 
-**Keywords:** "kid science kit robotics"
+**Keywords:** "robot gripper kit"
 
-**Search Results Link:** [https://www.amazon.com/s?k=kid+science+kit+robotics&crid=201H95H867ASY&sprefix=kid+science+kit+robotic%2Caps%2C162&ref=nb_sb_noss_2](https://www.amazon.com/s?k=kid+science+kit+robotics&crid=201H95H867ASY&sprefix=kid+science+kit+robotic%2Caps%2C162&ref=nb_sb_noss_2)
+**Search Results Link:** [https://www.amazon.com/s?k=robot+gripper+kit](https://www.amazon.com/s?k=robot+gripper+kit)
 
 ### Selected Products
 
-#### 1. [Tinkering Labs Robotics Engineering Kit](https://www.amazon.com/Tinkering-Labs-Electric-Engineering-Experiments/dp/B01M5GJFQ1/) < (link to the product)
+#### 1. [Mechanical Robot Arm Claw/Gripper Robot Gripper (Black Mechanical Claw Without servo)](https://a.co/d/09uhPVCP)
 
-![](image1.png)
-
-**(include a picture)**
-
-* Price: $65
+![Mechanical Claw](image/MechanicalClaw.avif)
+* Price: $16.99
 
 * Vendor: Amazon
 
-* Description: The kit includes over 50 high quality components and 10 Challenges that inspire kids to invent their own creations. The pieces are a combination of the everyday and the mysterious, perfect for generating creativity, boosting IQ and instilling STEM knowledge.
+* Description: Specification
+If you want to test the Robotic Claw directly, please use a servo tester. (ASIN: B07485M6PH) <br>
+Note: If the Claw(with servo) has any problem or servo missing, please come to us and we will solve it for you.<br>
+Please keep your fingers away from the Claw from getting hurt.<br>
+Close & Open Range: 0 - 7.62in/193.5mm<br>
+Max Grab Weight: 1.54LB / 700g<br>
+<br>
+Wrap-around Pick-up<br>
+The wrapping area of the mechanical claw is large, and the wrapping grabbing makes it more stable when picking up items
+<br>
+<br>
+Metal and Fiberglass Materials<br>
+The mechanical claw is made of hard aluminum alloy and glass fiber material, which is beautiful and compact.
+<br>
+<br>
+Large Contact Surface<br>
+The inner edge of the claw adopts a wavy design, the contact area of the jaw is large, and the grip is more stable when picking items
+<br>
+<br>
+Mounting Holes<br>
+The claw is equipped with multiple M2 and M3 holes, which is convenient for DIY expansion.
+<br>
+<br>
+Easy to Control<br>
+Through the servo tester, the steering gear can be controlled to quickly test the claws.
+<br>
+<br>
+Unlimited Creativity<br>
+Claws can be widely used in other products such as robotic arms and trolley chassis.
+<br>
 
 ##### Positive Comments
 
-| Voice of the Customer                                                                                                                                                                  | Restated Customer Need                                                              |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| "My son just turned 6 and he loves this due to the real tools, real wiring and building to truly make something. It is too advanced for his age to do alone but he will grow into it." | 1.  The kit is perceived as more than a toy (explicit)                              |
-|                                                                                                                                                                                        | 2.  The kit can be used by younger children without parental supervision (explicit) |
-|                                                                                                                                                                                        | 3.  The kit is safe for children of all ages (latent)                               |
+| Voice of the Customer | Restated Customer Need                                                              |
+| --- | --- |
+| This is a well-designed and useful gripper for grabbing a wiffle-ball, 2” cube or similar-size objects. It can be ordered with or without a servo. This can be put right on your prototype or spark your creativity for a custom design. It comes with additional screws.| 1. NEEDS HERE |
+| Good quality materials. | 2. NEEDS HERE |
 
 ##### Negative Comments
 
-| Voice of the Customer                                                                                                                                                                                                                                                                                                                                                                                | Restated Customer Need                                  |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| "I am a STEM teacher and bought a large quantity of these kits and I am disgusted by how easily the motor breaks. 12 years in STEM schools and this product is at the bottom of my list. The ladybug platform, as we call it, needs some reimagining and the materials simply can't handle the wear and tear of a classroom. Sad that I spend my own money on this with so little we got out of it." | 1.  The kit is robust. (explicit)                       |
-|                                                                                                                                                                                                                                                                                                                                                                                                      | 2.  The moving parts of the kit are reinforced.(latent) |
-|                                                                                                                                                                                                                                                                                                                                                                                                      | 3.  The kit survives multiple uses (explicit)           |
+| Voice of the Customer | Restated Customer Need                                                              |
+| --- | --- |
+| Meshing gear teeth ONLY exist on the servo driven side. the servo driving side has NO mounting points (claw to base) without a servo. Do not buy this item if you do not have or plan to get a servo to complete it. | 1. NEEDS HERE |
+
+
+
 
 #### 2. Next Product goes here
-
-### Search #2
-
-(you don't have to perform multiple searches, but sometimes different keywords reveal slightly different results)
-
-**Keywords:** <list an alternative search you did, if applicable>
-
-**Search Results Link:** <add your link here>
-
-### Selected Products
 
 #### 3. Next Product goes here
 
@@ -62,6 +119,17 @@ title: User Needs and Benchmarking
 ## Organized Need Statements
 
 ### First Placement
+
+| Source                 | Need Statement                                                                               | Category                  | Explicit/Latent|
+| :---                   | :---                                                                                         | :---                      | :---          |
+| Expert Interview       | Gripper provides feedback to grasp objects of varying shapes.                                | Sensing                   | Latent        |
+| Expert Interview       | Grippers accommodate variation in object orientation.                                        | Control                   | Latent        |
+| Expert Interview       | Gripper senses force across its gripping surface.                                            | Sensing                   | Explicit      |
+| Expert Interview       | System performs reliably for short-duration tasks without long-term recalibration.           | Reliability               | Latent        |
+| Expert Interview       | Control algorithm avoids inducing actuator faults.                                           | Control                   | Latent        |
+| Expert Interview       | Force sensor gives graduated (non-binary) feedback.                                          | Sensing                   | Explicit      |
+| Expert Interview       | Sensors perform reliably under real-world conditions.                                        | Environmental             | Latent        |
+| Expert Interview       | Wiring at joints withstands rotation without failure.                                        | Mechanical                | Explicit      |
 
 ### Grouped with categories
 
