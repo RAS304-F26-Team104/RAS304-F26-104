@@ -97,17 +97,53 @@ Claws can be widely used in other products such as robotic arms and trolley chas
 | --- | --- |
 | This is a well-designed and useful gripper for grabbing a wiffle-ball, 2” cube or similar-size objects. It can be ordered with or without a servo. This can be put right on your prototype or spark your creativity for a custom design. It comes with additional screws.| 1. NEEDS HERE |
 | Good quality materials. | 2. NEEDS HERE |
+| NOTE: NO OTHER USEFUL REVIEWS | |
 
 ##### Negative Comments
 
 | Voice of the Customer | Restated Customer Need                                                              |
 | --- | --- |
 | Meshing gear teeth ONLY exist on the servo driven side. the servo driving side has NO mounting points (claw to base) without a servo. Do not buy this item if you do not have or plan to get a servo to complete it. | 1. NEEDS HERE |
+| I am happy with it, though the gripping function is not too strong with common metal servos. | 1. NEEDS HERE |
+| NOTE: NO OTHER USEFUL REVIEWS | |
+
+
+#### 2. [Professional Metal Robot Arm/Gripper/Mechanical Claw/Clamp/Clip with High Torque Servo, RC Robotic Part Educational DIY for Arduino/Raspberry Pie, Science STEAM Maker Platform (Black)](https://a.co/d/031xCJhw)
+
+![Professional Metal Robot Arm Gripper](image/ProfessionalMetal.avif)
+
+* Vendor: Amazon
+
+* Description: 
+
+[ What You Get ]: In this order, you will get 1set unassembled gripper, 1 bag screw, and 1pc MG996R servo; This mechanical robot arm claw is metal including many accessories, so please have patience to install the claw. After that, the claw is very beautiful and solid.
+
+[ NOTE ]: The claw is UNASSEMBLED for convenience of transport. But we provide the installation manual with this item or visit gitnova to get the documents, or contact us to get the document.
+[ Programming ]: By this metal robot claw, you can learn the robotic structure. Importantly, you can learn the code programming to control the gripper to the destinations, arduino coding, raspberry pie, microbit, and other.
+
+[ Function ]: You can use this clamp to realize some useful functions, i.e., use this claw to grip some items to the destinations. Many people use this claw to factory applications, experiments, and other repeat applications.
+
+[ Learning ]: This paw can be used for the function model realization. Maybe the precision is not high, but you can learn how to control the robot claw with servo motor by the controller, like Arduino, Raspberry pie. This robot arm gripper is a research and learning kit for adult college students.
 
 
 
+##### Positive Comments
 
-#### 2. Next Product goes here
+| Voice of the Customer | Restated Customer Need|
+| --- | --- |
+| I purchased these grippers as part of a project I am working on to equipment a drone (a pixhawk based coaxial octocopter) with a payload gripper. These grippers assembled nicely and function well. The servo included has a good grip strengh (enough to hold a filled water bottle easily) and the assembly was straight forward and largely self explanatory. My only recommendation to the vendor would be that the instructions were printed in low resolution black and white. given the price tag I would have appreciated a full color print| 1. NEEDS HERE|
+| This is a strong and steady. The claws are aligned. It takes time to install and it’s a good product. | 2. NEEDS HERE |
+| A little time consuming to assemble and very sharp, but it saved our robotics season at the last minute! | 3. NEEDS HERE |
+
+
+
+##### Negative Comments
+
+| Voice of the Customer | Restated Customer Need|
+| --- | --- |
+| bearing is missing, it is useless without it. Flimsy, can be called "professional" sarcastically. | 1. NEEDS HERE |
+| he kit is....ok. The stampings are good. No burs or sharp edges. Some of the holes had to be redrilled they didn't line up and everywhere flathead screw were used need to be countersunk Fail enough. But the instructions....the instructions are bad. They are tiny, poorly printed, even more poorly translated and just plain confusing and/or wrong. The pictures on the Amazon page are more useful to help understand how it goes together. | 2. NEEDS HERE |
+| It locks up if you go beyond its range of operation. Open it too far or close it too far.| 3. NEEDS HERE |
 
 #### 3. Next Product goes here
 
