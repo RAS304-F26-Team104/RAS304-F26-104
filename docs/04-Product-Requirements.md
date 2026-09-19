@@ -24,7 +24,9 @@ Jenna occasionally visits the bar in the evenings. She is a big fan of the L.A. 
 
 ### User Story #2
 
-...
+Dr. Ortiz buys 12 kits for her embedded systems course. The lab technician, Sam, checks each kit against the parts checklist in a few minutes and finds all kits complete. Six weeks in, one station's readings start to drift and its jaw pads are worn. Sam runs the self-test, which points to the force sensor. He swaps the sensor and pads in about 15 minutes without unmounting the gripper from the arm or tearing down the linkage, then recalibrates.
+
+During the same week a student commands the jaws to close on a fixed vise. Firmware current limiting and the hardware over-current protection stop the servo from stalling into burnout, and the linkage does not lock up. A warning label at the jaws had already reminded the student about the pinch hazard, and no one is hurt. At the end of term, Dr. Ortiz orders gripper-only kits to fit six older arm bases left over from previous years, using the adapter plates.
 
 ## Aspects
 
@@ -89,10 +91,43 @@ The end effector gripper design will be based on that of the user needs with imp
 
 ## Requirement Criteria Specifications
 
-* 1.1.1 - Regulate system power from 9 volts to 5 volts
-* 1.1.2 - Provide over-amperage project to not exceed 1.5 amps.
+Method: **I** = Inspection, **A** = Analysis, **T** = Test, **D** = Demonstration. Values are initial targets.
+
+| Req. ID | Specification | Method |
+|---|---|---|
+| 1.1, 1.2 | Lifts and holds 5 reference objects (cylinder, cube, sphere, plate, rod) at 0-45° yaw in at least 9 of 10 trials each. | T |
+| 1.3 | Jaw opening at least 60 mm. | I |
+| 1.4 | Fingertip grip force at least 15 N at rated servo torque. | T |
+| 1.5, 1.6 | Aluminum links; fingertip deflection 0.5 mm or less at 20 N. | I, A |
+| 1.7 | Pivot play 0.3 mm or less after 50,000 cycles. | T |
+| 1.8 | No wire contacts moving links; strain relief at every connector. | I |
+| 2.1 | Holds a 500 g payload for 60 s, including a 300 mm move, in 10 of 10 trials. | T |
+| 2.2, 2.3 | Sensor covers 80% or more of each jaw pad; 100 Hz sampling, 10 ms or less latency. | I, T |
+| 2.4, 2.10 | Torque limited within 500 ms when blocked; zero servo faults over 1,000 cycles including 50 blocked closes. | T |
+| 2.5, 2.6 | 0-3.3 V output read directly by an ADC; 1 IC and 6 passives or fewer, no trim pots. | I, T |
+| 2.7, 2.8, 2.15 | Within ±5% of full scale versus a reference load cell (0-20 N); standard deviation 2% or less over 100 loads. | T |
+| 2.9 | No continuity loss after 10,000 joint cycles. | T |
+| 2.11, 2.13, 2.14 | Drift 2% or less per hour; accuracy holds for 8 h and 500 grasps without recalibration. | T |
+| 2.12, 2.16 | Self-test gives pass/fail in 10 s or less; at least 18 of 20 injected faults classified correctly. | D, T |
+| 2.17 | 5 V rail within 4.75-5.25 V from a 9 V input at up to 1.5 A. | T |
+| 3.1, 3.5, 3.6 | First-time users, with only the manual and included tools, assemble the gripper in 60 min or less. | D |
+| 3.2, 3.3 | At least 4 of 5 first-time users wire the sensor correctly from the schematic, with no tuning. | D |
+| 3.4, 3.7, 3.8 | 5 or fewer library calls; runs on Arduino, ESP32, and STM32 with no adapters. | D |
+| 4.1, 4.4 | Adapter plates for at least 2 arm bases and 2 third-party grippers. | I, D |
+| 4.2 | At least 3 purchase options (full kit, gripper only, sensor + electronics only). | I |
+| 4.3 | Worn parts replaced in 15 min or less with the gripper left on the arm. | D |
+| 5.1 | BOM under $700 USD FOB at 100 units, backed by supplier quotes. | A |
+| 5.2 | Parts checklist for every kit; 1 or fewer missing-part incident per 100 kits. | I |
+| 5.3, 5.5 | Each assembly step has 3 or fewer actions and an exploded view. | I |
+| 5.4 | STEP/PDF drawing of every part, plus schematic and BOM. | I |
+| 6.1 | Shipped firmware matches the latest tagged release; version readable over serial. | I |
+| 6.2 | No linkage lock-up in 1,000 cycles. | T |
+| 6.3 | No deformation over 0.1 mm, warping, or discoloration after 30 N for 60 s. | T |
+| 6.4 | Over-current protection trips at 1.5 A or less; a short trips it within 100 ms with no damage. | T |
 
 ## Open Questions
 
 * Can we move towards a recyclable and repairable product, for example, with ZIF connectors and glue-free assembly?
-* Can we improve on failing or self-igniting batteries?
+* Can we improve on failing or self-igniting batteries, or remove onboard batteries?
+* Which force-sensor type can meet ±5% accuracy within the cost target?
+* Which regulations and standards formally apply to an educational robot kit?
