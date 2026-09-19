@@ -30,63 +30,62 @@ Jenna occasionally visits the bar in the evenings. She is a big fan of the L.A. 
 
 The end effector gripper design will be based on that of the user needs with improvements based on the following requirements. The **P1 - P10** is the "code" to indicate the priority of the requirement, from low to high.
 
-1. **Hardware / Product Design**
-   * 1.1 The device shall provide feedback to the user in order to grasp various shapes and sized objects. (P9)
-   * 1.2 The device shall accommodate various orientations of the objects. (P10)
-   * 1.3 The device can open its jaws wide enough to accommodate larger than 2in. Sized objects. (P8)
-   * 1.4 The device’s linkage design maximises servo force. (P8)
-   * 1.5 The device is manufactured from aluminum, a durable material. (P10)
-   * 1.6 The device’s material will resist flexing under operating loads. (P9) 
-   * 1.7 The device will use durable bearings at pivot points to handle dynamic loads. (P7)
-   * 1.8 The device will have wiring that will not interfere with the motion of the joints. (P7) 
+**1.** Hardware / Product Design
+    1.1 The device shall provide feedback to the user in order to grasp various shapes and sized objects. (P9)
+    1.2 The device shall accommodate various orientations of the objects. (P10)
+    1.3 The device can open its jaws wide enough to accommodate larger than 2in. Sized objects. (P8)
+    1.4 The device’s linkage design maximises servo force. (P8)
+    1.5 The device is manufactured from aluminum, a durable material. (P10)
+    1.6 The device’s material will resist flexing under operating loads. (P9) 
+    1.7 The device will use durable bearings at pivot points to handle dynamic loads. (P7)
+    1.8 The device will have wiring that will not interfere with the motion of the joints. (P7) 
   
-2. **Functionality**
-      * 2.1 The gripper’s grip strength shall be sufficient  to securely hold payloads. (P10)
-      * 2.2 The gripper shall sense force across its surface. (P10)
-      * 2.3 The force sensor shall give feedback. (P9)
-      * 2.4 Firmware or the servo controller shall enforce soft limits to prevent motor burnout from stalling. (P10)
-      * 2.5 The sensor shall integrate directly with microcontroller ADC inputs. (P8)
-      * 2.6 The sensor's circuit design shall allow simple signal conditioning rather than trial and error tuning. (P7)
-      * 2.7 The sensor shall provide accurate pressure feedback. (P8)
-      * 2.8 The sensor shall provide consistent and repeatable pressure readings. (P8)
-      * 2.9 Wiring at joints shall withstand rotation without failure. (P10)
-      * 2.10 The control algorithm shall avoid inducing actuator faults. (P7)
-      * 2.11 The sensor shall include precision in order to prevent drift over time. (P5)
-      * 2.12 Sensor parts shall prevent users from having to debug deep electromechanical issues. (P5)
-      * 2.13 The system shall perform reliably for tasks without recalibration. (P5)
-      * 2.14 The sensor shall function consistently under load. (P5)
-      * 2.15 The device will provide consistent, repeatable pressure readings once calibrated. (P8)
-      * 2.16 The device will process precise force inputs to correctly identify whether a failed grasp was due to a sensor fault or an actuator fault. (P6)
+**2.** Functionality
+       2.1 The gripper’s grip strength shall be sufficient  to securely hold payloads. (P10)
+       2.2 The gripper shall sense force across its surface. (P10)
+       2.3 The force sensor shall give feedback. (P9)
+       2.4 Firmware or the servo controller shall enforce soft limits to prevent motor burnout from stalling. (P10)
+       2.5 The gripper sensor shall integrate directly with microcontroller ADC inputs. (P8)
+       2.6 The gripper sensor's circuit design shall allow simple signal conditioning rather than trial and error tuning. (P7)
+       2.7 The gripper sensor shall provide accurate pressure feedback. (P8)
+       2.8 The gripper sensor shall provide consistent and repeatable pressure readings. (P8)
+       2.9 Wiring at joints shall withstand rotation without failure. (P10)
+       2.10 The control algorithm shall avoid inducing actuator faults. (P7)
+       2.11 The sensor shall include precision in order to prevent drift over time. (P5)
+       2.12 Gripper sensor parts shall prevent users from having to debug deep electromechanical issues. (P5)
+       2.13 The gripper shall perform reliably for tasks without recalibration. (P5)
+       2.14 The gripper shall function consistently under load. (P5)
+       2.15 The gripper sensor will provide consistent, repeatable pressure readings once calibrated. (P8)
+       2.16 The gripper sensor will process precise force inputs to correctly identify whether a failed grasp was due to a sensor fault or an actuator fault. (P6)
 
-3. **Interactivity**
-   * 3.1 The device is designed for a simple assembly process. (P8)
-   * 3.2 The device will include a clear circuit schematics. (P7)
-   * 3.3 The circuit should allow for simple signal conditioning without needing trial and error. (P7)
-   * 3.4 The device can interface easily with existing control hardware. (P7)
-   * 3.5 The device is easily accessible to use and integrate. (P8)
-   * 3.6 The device is designed to have a quick installation time. (P6) 
-   * 3.7 The assembly process shall be simple, requiring no special tools. (P3)
-   * 3.8 The system shall work easily with existing control hardware. (P1)
-   * 3.9 The sensor shall integrate with common microcontroller platforms without special adapters. (P1)
+**3.** Interactivity
+    3.1 The robotic arm is designed for a simple assembly process. (P8)
+    3.2 The gripper will include a clear circuit schematics. (P7)
+    3.3 The circuit should allow for simple signal conditioning without needing trial and error. (P7)
+    3.4 The robotic arm is easily accessible to use and integrate. (P8)
+    3.5 The robotic arm is designed to have a quick installation time. (P6) 
+    3.6 The robotic arm assembly process shall be simple, requiring no special tools. (P3)
+    3.7 The gripper shall work easily with existing control hardware. (P1)
+    3.8 The gripper sensor shall integrate with common microcontroller platforms without special adapters. (P1)
 
-4. **Customization**
-   * 4.1 The design shall mount and adapt to different platforms. (P1)
-   * 4.2 Purchasing options are provided for users with preexisting actuators. (P1)
-   * 4.3 The device shall support the replacement of worn components without requiring a full teardown of the gripper or mounting hardware. (P8)
-   * 4.4 The design shall support different gripper manufacturers.
+**4.** Customization
+    4.1 The gripper shall mount and adapt to different robotic arm bases. (P1)
+    4.2 Purchasing options are provided for users with preexisting components. (P1)
+    4.3 The robotic arm shall support the replacement of worn components of the gripper without requiring a full teardown of the gripper or mounting hardware. (P8)
+    4.4 The design shall support different gripper manufacturers.
 
-5. **Manufacturing**
-   * 5.1 The total FOB cost price of the hardware  of the device shall be <$700USD. (P10)
-   * 5.2 Hardware kits shall undergo quality control to ensure they contain all parts. (P7)
-   * 5.3 The manual  for all assemblies shall be precise and clear. (P7)
-   * 5.4 A schematic for all parts shall be provided. (P10)
-   * 5.5 All documentation on the device assembly will include clear instructions. (P5)
+**5.** Manufacturing
+    5.1 The total FOB cost price of the hardware of the robotic arm and gripper shall be <$700USD. (P10)
+    5.2 Hardware kits shall undergo quality control to ensure they contain all parts. (P7)
+    5.3 The manual for all assemblies shall be precise and clear. (P7)
+    5.4 A schematic for all parts shall be provided. (P10)
+    5.5 All documentation on the gripper's assembly will include clear instructions. (P5)
 
-6. **Regulations**
-   * 6.1 The device’s firmware shall be up to date. (P4)
-   * 6.2 The device’s linkages shall have a system to prevent lock-ups. (P10)
-   * 6.2 The device shall not warp or become discolored under stress. (P7)
-   * 6.9 The device’s servo controller shall have enforced limits to prevent motor burnout. (P7)
+**6.** Regulations
+    6.1 The robotic arm's firmware shall be up to date. (P4)
+    6.2 The gripper's linkages shall have a system to prevent lock-ups. (P10)
+    6.2 The gripper shall not warp or become discolored under stress. (P7)
+    6.9 The robotic arm and gripper servo controller shall have enforced limits to prevent motor burnout. (P7)
 
 ## Requirement Criteria Specifications
 
