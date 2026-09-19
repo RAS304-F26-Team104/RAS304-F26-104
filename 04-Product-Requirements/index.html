@@ -1156,7 +1156,8 @@
 <p>Jenna is a 33-year-old executive who regularly visits a bar for lunch to blow off some steam. The bar is often loud with people, but it is paramount that she can hold business conversations over the phone there. Then again, she does not want to miss out on the atmosphere and be able to hear the waiters as well. Her new Apple wireless earphones allow her to switch instantly between a mode where she can fully focus on the phone conversation and a mode where the phone call and environmental sound are seamlessly combined. They also allow her to rapidly adjust the volume on the earbuds themselves without having to take out her phone.</p>
 <p>Jenna occasionally visits the bar in the evenings. She is a big fan of the L.A. Lakers, and whenever they play, she streams the live footage through her phone. Her new earbuds allow her to easily switch to hearing everything around her and streaming the match commentary without having to ever take the earbuds out.  She sometimes gets compliments on how stylish the earbuds look on her, and she wouldn’t want to miss out on hearing those either.</p>
 <h3 id="user-story-2">User Story #2</h3>
-<p>...</p>
+<p>Dr. Ortiz buys 12 kits for her embedded systems course. The lab technician, Sam, checks each kit against the parts checklist in a few minutes and finds all kits complete. Six weeks in, one station's readings start to drift and its jaw pads are worn. Sam runs the self-test, which points to the force sensor. He swaps the sensor and pads in about 15 minutes without unmounting the gripper from the arm or tearing down the linkage, then recalibrates.</p>
+<p>During the same week a student commands the jaws to close on a fixed vise. Firmware current limiting and the hardware over-current protection stop the servo from stalling into burnout, and the linkage does not lock up. A warning label at the jaws had already reminded the student about the pinch hazard, and no one is hurt. At the end of term, Dr. Ortiz orders gripper-only kits to fit six older arm bases left over from previous years, using the adapter plates.</p>
 <h2 id="aspects">Aspects</h2>
 <p>The end effector gripper design will be based on that of the user needs with improvements based on the following requirements. The <strong>P1 - P10</strong> is the "code" to indicate the priority of the requirement, from low to high.</p>
 <h3 id="1-hardware-product-design"><strong>1. Hardware / Product Design</strong><br></h3>
@@ -1216,14 +1217,169 @@
 6.9 The robotic arm and gripper servo controller shall have enforced limits to prevent motor burnout. (P7)&lt;br&gt;
 </code></pre>
 <h2 id="requirement-criteria-specifications">Requirement Criteria Specifications</h2>
-<ul>
-<li>1.1.1 - Regulate system power from 9 volts to 5 volts</li>
-<li>1.1.2 - Provide over-amperage project to not exceed 1.5 amps.</li>
-</ul>
+<p>Method: <strong>I</strong> = Inspection, <strong>A</strong> = Analysis, <strong>T</strong> = Test, <strong>D</strong> = Demonstration. Values are initial targets.</p>
+<table>
+<thead>
+<tr>
+<th>Req. ID</th>
+<th>Specification</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1, 1.2</td>
+<td>Lifts and holds 5 reference objects (cylinder, cube, sphere, plate, rod) at 0-45° yaw in at least 9 of 10 trials each.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>Jaw opening at least 60 mm.</td>
+<td>I</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Fingertip grip force at least 15 N at rated servo torque.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>1.5, 1.6</td>
+<td>Aluminum links; fingertip deflection 0.5 mm or less at 20 N.</td>
+<td>I, A</td>
+</tr>
+<tr>
+<td>1.7</td>
+<td>Pivot play 0.3 mm or less after 50,000 cycles.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>1.8</td>
+<td>No wire contacts moving links; strain relief at every connector.</td>
+<td>I</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>Holds a 500 g payload for 60 s, including a 300 mm move, in 10 of 10 trials.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>2.2, 2.3</td>
+<td>Sensor covers 80% or more of each jaw pad; 100 Hz sampling, 10 ms or less latency.</td>
+<td>I, T</td>
+</tr>
+<tr>
+<td>2.4, 2.10</td>
+<td>Torque limited within 500 ms when blocked; zero servo faults over 1,000 cycles including 50 blocked closes.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>2.5, 2.6</td>
+<td>0-3.3 V output read directly by an ADC; 1 IC and 6 passives or fewer, no trim pots.</td>
+<td>I, T</td>
+</tr>
+<tr>
+<td>2.7, 2.8, 2.15</td>
+<td>Within ±5% of full scale versus a reference load cell (0-20 N); standard deviation 2% or less over 100 loads.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>2.9</td>
+<td>No continuity loss after 10,000 joint cycles.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>2.11, 2.13, 2.14</td>
+<td>Drift 2% or less per hour; accuracy holds for 8 h and 500 grasps without recalibration.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>2.12, 2.16</td>
+<td>Self-test gives pass/fail in 10 s or less; at least 18 of 20 injected faults classified correctly.</td>
+<td>D, T</td>
+</tr>
+<tr>
+<td>2.17</td>
+<td>5 V rail within 4.75-5.25 V from a 9 V input at up to 1.5 A.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>3.1, 3.5, 3.6</td>
+<td>First-time users, with only the manual and included tools, assemble the gripper in 60 min or less.</td>
+<td>D</td>
+</tr>
+<tr>
+<td>3.2, 3.3</td>
+<td>At least 4 of 5 first-time users wire the sensor correctly from the schematic, with no tuning.</td>
+<td>D</td>
+</tr>
+<tr>
+<td>3.4, 3.7, 3.8</td>
+<td>5 or fewer library calls; runs on Arduino, ESP32, and STM32 with no adapters.</td>
+<td>D</td>
+</tr>
+<tr>
+<td>4.1, 4.4</td>
+<td>Adapter plates for at least 2 arm bases and 2 third-party grippers.</td>
+<td>I, D</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>At least 3 purchase options (full kit, gripper only, sensor + electronics only).</td>
+<td>I</td>
+</tr>
+<tr>
+<td>4.3</td>
+<td>Worn parts replaced in 15 min or less with the gripper left on the arm.</td>
+<td>D</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>BOM under $700 USD FOB at 100 units, backed by supplier quotes.</td>
+<td>A</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Parts checklist for every kit; 1 or fewer missing-part incident per 100 kits.</td>
+<td>I</td>
+</tr>
+<tr>
+<td>5.3, 5.5</td>
+<td>Each assembly step has 3 or fewer actions and an exploded view.</td>
+<td>I</td>
+</tr>
+<tr>
+<td>5.4</td>
+<td>STEP/PDF drawing of every part, plus schematic and BOM.</td>
+<td>I</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>Shipped firmware matches the latest tagged release; version readable over serial.</td>
+<td>I</td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>No linkage lock-up in 1,000 cycles.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>6.3</td>
+<td>No deformation over 0.1 mm, warping, or discoloration after 30 N for 60 s.</td>
+<td>T</td>
+</tr>
+<tr>
+<td>6.4</td>
+<td>Over-current protection trips at 1.5 A or less; a short trips it within 100 ms with no damage.</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
 <h2 id="open-questions">Open Questions</h2>
 <ul>
 <li>Can we move towards a recyclable and repairable product, for example, with ZIF connectors and glue-free assembly?</li>
-<li>Can we improve on failing or self-igniting batteries?</li>
+<li>Can we improve on failing or self-igniting batteries, or remove onboard batteries?</li>
+<li>Which force-sensor type can meet ±5% accuracy within the cost target?</li>
+<li>Which regulations and standards formally apply to an educational robot kit?</li>
 </ul>
 
 
