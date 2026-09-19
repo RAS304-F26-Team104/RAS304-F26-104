@@ -30,9 +30,9 @@ Jenna occasionally visits the bar in the evenings. She is a big fan of the L.A. 
 
 The end effector gripper design will be based on that of the user needs with improvements based on the following requirements. The **P1 - P10** is the "code" to indicate the priority of the requirement, from low to high.
 
-**1.** Hardware / Product Design
-1.1 The device shall provide feedback to the user in order to grasp various shapes and sized objects. (P9)  
-1.2 The device shall accommodate various orientations of the objects. (P10)  
+**1. Hardware / Product Design**
+1.1 The device shall provide feedback to the user in order to grasp various shapes and sized objects. (P9)
+1.2 The device shall accommodate various orientations of the objects. (P10)
 1.3 The device can open its jaws wide enough to accommodate larger than 2in. Sized objects. (P8)  
 1.4 The device’s linkage design maximises servo force. (P8)  
 1.5 The device is manufactured from aluminum, a durable material. (P10)  
@@ -40,7 +40,7 @@ The end effector gripper design will be based on that of the user needs with imp
 1.7 The device will use durable bearings at pivot points to handle dynamic loads. (P7)  
 1.8 The device will have wiring that will not interfere with the motion of the joints. (P7)  
   
-**2.** Functionality
+**2. Functionality**
        2.1 The gripper’s grip strength shall be sufficient  to securely hold payloads. (P10)
        2.2 The gripper shall sense force across its surface. (P10)
        2.3 The force sensor shall give feedback. (P9)
@@ -58,7 +58,7 @@ The end effector gripper design will be based on that of the user needs with imp
        2.15 The gripper sensor will provide consistent, repeatable pressure readings once calibrated. (P8)
        2.16 The gripper sensor will process precise force inputs to correctly identify whether a failed grasp was due to a sensor fault or an actuator fault. (P6)
 
-**3.** Interactivity
+**3. Interactivity**
     3.1 The robotic arm is designed for a simple assembly process. (P8)
     3.2 The gripper will include a clear circuit schematics. (P7)
     3.3 The circuit should allow for simple signal conditioning without needing trial and error. (P7)
@@ -68,20 +68,20 @@ The end effector gripper design will be based on that of the user needs with imp
     3.7 The gripper shall work easily with existing control hardware. (P1)
     3.8 The gripper sensor shall integrate with common microcontroller platforms without special adapters. (P1)
 
-**4.** Customization
+**4. Customization**
     4.1 The gripper shall mount and adapt to different robotic arm bases. (P1)
     4.2 Purchasing options are provided for users with preexisting components. (P1)
     4.3 The robotic arm shall support the replacement of worn components of the gripper without requiring a full teardown of the gripper or mounting hardware. (P8)
     4.4 The design shall support different gripper manufacturers.
 
-**5.** Manufacturing
+**5. Manufacturing**
     5.1 The total FOB cost price of the hardware of the robotic arm and gripper shall be <$700USD. (P10)
     5.2 Hardware kits shall undergo quality control to ensure they contain all parts. (P7)
     5.3 The manual for all assemblies shall be precise and clear. (P7)
     5.4 A schematic for all parts shall be provided. (P10)
     5.5 All documentation on the gripper's assembly will include clear instructions. (P5)
 
-**6.** Regulations
+**6. Regulations**
     6.1 The robotic arm's firmware shall be up to date. (P4)
     6.2 The gripper's linkages shall have a system to prevent lock-ups. (P10)
     6.2 The gripper shall not warp or become discolored under stress. (P7)
