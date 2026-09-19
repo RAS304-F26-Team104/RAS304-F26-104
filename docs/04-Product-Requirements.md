@@ -31,14 +31,14 @@ Jenna occasionally visits the bar in the evenings. She is a big fan of the L.A. 
 The end effector gripper design will be based on that of the user needs with improvements based on the following requirements. The **P1 - P10** is the "code" to indicate the priority of the requirement, from low to high.
 
 **1. Hardware / Product Design**
-1.1 The device shall provide feedback to the user in order to grasp various shapes and sized objects. (P9)
-1.2 The device shall accommodate various orientations of the objects. (P10)
-1.3 The device can open its jaws wide enough to accommodate larger than 2in. Sized objects. (P8)  
-1.4 The device’s linkage design maximises servo force. (P8)  
-1.5 The device is manufactured from aluminum, a durable material. (P10)  
-1.6 The device’s material will resist flexing under operating loads. (P9)  
-1.7 The device will use durable bearings at pivot points to handle dynamic loads. (P7)  
-1.8 The device will have wiring that will not interfere with the motion of the joints. (P7)  
+1.1 The device shall provide feedback to the user in order to grasp various shapes and sized objects. (P9)<br>
+1.2 The device shall accommodate various orientations of the objects. (P10)<br>
+1.3 The device can open its jaws wide enough to accommodate larger than 2in. Sized objects. (P8)<br>
+1.4 The device’s linkage design maximises servo force. (P8)<br>
+1.5 The device is manufactured from aluminum, a durable material. (P10)<br>
+1.6 The device’s material will resist flexing under operating loads. (P9)<br>
+1.7 The device will use durable bearings at pivot points to handle dynamic loads. (P7)<br>
+1.8 The device will have wiring that will not interfere with the motion of the joints. (P7)<br>
   
 **2. Functionality**
        2.1 The gripper’s grip strength shall be sufficient  to securely hold payloads. (P10)
