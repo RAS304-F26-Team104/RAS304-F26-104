@@ -246,5 +246,5 @@ To apply rankings to our top ideas, we utilized the priority weighting system (P
 Another aspect our group started thinking about was software applications which we included in our top 100 rankings.  Hardware and electronics alone wouldn't be able to achieve our goals for what we would consider a “smart” gripper. We began to talk about and include an emphasis on firmware, digital filtering, and control algorithms to feature in our top 100 ideas.<br>
 
 ## Product Concepts
-Add your different product concepts stuff here
+![Concept One](image/gripperconcept.png)
 
