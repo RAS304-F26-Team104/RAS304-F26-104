@@ -250,3 +250,4 @@ Another aspect our group started thinking about was software applications which 
 
 ![Concept Two](image/gripperconcept2.png)
 
+![Concept Three](image/gripperconcept3.png)
