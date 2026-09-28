@@ -248,3 +248,5 @@ Another aspect our group started thinking about was software applications which 
 ## Product Concepts
 ![Concept One](image/gripperconcept.png)
 
+![Concept Two](image/gripperconcept2.png)
+
