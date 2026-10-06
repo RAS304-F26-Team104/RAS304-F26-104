@@ -34,3 +34,10 @@ Professor Thangavelu<br>
 | Aakash Kumar           | [Aakash Kumar's GitHub](https://iicaros.github.io/akuma501_RAS304_F26/) |
 | Sakiya Mason           | [Sakiya Mason's GitHub](https://samaso12.github.io/samaso12_RAS304_F26/) |
 | Joseph Zimmerman       | link |
+
+## Team Block Diagram
+
+[Team Block Diagram (PDF)](https://drive.google.com/file/d/1ARjUwqxAqGhN6v960RQab8mTOhYNf0cH/view?usp=sharing)
+
+##Team Block Diagram
+[Team Block Diagram (PDF)](https://drive.google.com/file/d/1ARjUwqxAqGhN6v960RQab8mTOhYNf0cH/view?usp=sharing)
