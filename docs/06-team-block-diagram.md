@@ -17,7 +17,8 @@ This document outlines the hardware architecture and system layout for the **Tea
 ![Team 104 Block Diagram](image/team104blockdiagram.png)  
 **Figure 1:** Complete hardware block diagram outlining the physical interconnections and power distribution for the Smart Gripper subsystem nodes.
 
-## Results
+The Block Diagram as a PDF download is available [*here*](image/team-block-diagram.pdf)
+<br><br>
 
 1. Defined the hardware hierarchy consisting of a Master Node and four specialized sensor nodes (Grip, Tactile, Proximity, and Slip Detection).
 2. Mapped out the power distribution network for all sub-assemblies.
