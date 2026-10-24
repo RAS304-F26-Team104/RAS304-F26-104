@@ -16,5 +16,5 @@ This document proposes the software state machines and execution logic for the *
 
 ## Flowcharts
 
-![Team 104 Software Proposal Flowchart](image\Team104SoftwareProposal.drawio.png)
+![Team 104 Software Proposal Flowchart](image/Team104SoftwareProposal.drawio.png)
 **Figure 1:** Complete software execution flow and polling loops for the Smart Gripper subsystem nodes.
