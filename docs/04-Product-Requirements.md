@@ -2,31 +2,38 @@
 title: Product Requirements
 ---
 
-## Project Objective
+## Introduction
 
-This project aims to investigate and develop smart adaptive technologies, an improved user experience, better fit, improved product design, and product customization options for the next-generation AirPods. The target is to maintain global dominance in the wireless earphone market, drive up AirPod sales to 100 million+ units sold with a 60% global market share in 2021 and expand the user base more towards the luxury, professional, and fitness segments. We believe that adding smart interactions and adaptive audio filters alone will already expand our user base by 15%. With the new generation AirPods we aim to match at least the sound quality of our main competitor, the Sony WF-1000XM3, and include Active Noise Canceling that is also featured in Mifo, House of Marley, Bose, and Amazon Echo products. We will also obtain IPX4 sweat-resistant rating equal to Bose, House of Marley, and Amazon Echo earbuds, and aim to extend our range of colors, as seen in Urbanista and Jabra’s lifestyle products.
+Robotic grippers have been adopted across maker platforms, automation testbeds, and in house automation solutions. Customer feedback across numerous sites have revealed a considerable number of gaps to fill in the robotic gripper market. Some of these include mechanical constraint issues, grasping compliance, no tactile feedback, and virtually no information about the object being held by the gripper. Our team sees an opportunity to create a plug and play smart gripper capable of force control, broad object adaptability, and integrated multi-modal sensor feedback.
+
+## Objectives
+
+This project aims to research, engineer, and validate an adaptive robotic gripper system featuring tactile sensing, rigid structural mechanisms, and a simplified user interface for industrial, academic, and prototyping applications. Our primary objective is to fill the gaps left by other products in the market by delivering reliable force control and other sensor applications. The primary goals of this project include closed loop sensing and real time feedback, custom electronics and interfacing, modular and maintainable mechanical systems, and easy system integration. These extra feedback additions within our three-hundred dollar budget allow us to potentially price a quality based gripper at a much more affordable price compared to current competitors in the market, such as FerRobotics, OnRobot, Schunk, and Robotiq.
+
 
 ## Stakeholders
-
-* **Target group** High-income upper-class professionals between the age of 20 and 45. Their personalities are determined and ambitious. The main benefits sought are recreation and self-expression.
-* **Target purchaser** Target group profile with special attention to Full Nest I and Full Nest II mothers.
-* **Customer service** Prefers easy-to-repair, recyclable product, and easy-to-fix complaints to fit with Apple’s intuitive user experience.
-* **Marketing & Sales division** Looks for unique selling points around the Apple Aspirer-Explorer lifestyle and user experience.
-* **Retailers** Prefer products that can withstand a wide range of storage conditions including variations in temperature, vibration, humidity, and atmospheric pressure, and have a strong and compact, theft, and vandalism-proof packaging.
+**Target Group (Primary Users):** Undergraduate and graduate university researchers, STEM Educators, automation testbeds, rapid prototypers aged 18-45. They are hands-on, technologically ambitious, and seek a highly reliable, modular system that can integrate flawlessly with their existing and future projects.
+**Target Purchaser:** University lab coordinators, academic department heads, STEM program directors, and budget conscious researchers looking for gripper systems that are able to provide feedback.
+**End Users (Lab Peers, Researchers, Prototypers, System Integrators):** Prefers easy to repair, reliable products that are able to permit rapid component replacement without full system teardowns.  
+**Robot Platform (Host system bearing the payload):** Wants minimal power consumption, low weight, structural rigidity, and allows high amounts of feedback to be sent over different communication protocols.
+**Payload (Target Object):** Needs stable gripping surfaces, dynamic force compliance for varying stiffnesses, and non-destructive contact forces. 
 
 ## Use Cases
 
-### User Story #1: Jenna
+### User Story #1: Undergraduate Professor
 
-Jenna is a 33-year-old executive who regularly visits a bar for lunch to blow off some steam. The bar is often loud with people, but it is paramount that she can hold business conversations over the phone there. Then again, she does not want to miss out on the atmosphere and be able to hear the waiters as well. Her new Apple wireless earphones allow her to switch instantly between a mode where she can fully focus on the phone conversation and a mode where the phone call and environmental sound are seamlessly combined. They also allow her to rapidly adjust the volume on the earbuds themselves without having to take out her phone.
 
-Jenna occasionally visits the bar in the evenings. She is a big fan of the L.A. Lakers, and whenever they play, she streams the live footage through her phone. Her new earbuds allow her to easily switch to hearing everything around her and streaming the match commentary without having to ever take the earbuds out.  She sometimes gets compliments on how stylish the earbuds look on her, and she wouldn’t want to miss out on hearing those either.
+A professor at an undergraduate college program needs to teach his students about integrating sensors into feedback loops, and selects the robotic gripper for this purpose. The gripper allows him to build on existing instruction in robotic kinematics by mounting the gripper to the arm the students have used previously. The pressure sensors in the gripper allow the students to make a program that verifies successful collection of a block by measuring the mechanical resistance on the gripper’s closing action. 
 
-### User Story #2
+The feedback provided by the gripper also allows him to teach his students about implementing the block-sensing program into an autonomously operating program, enabling it to detect errors when the block is missed. The students are then tasked with creating software to find and recollect the block when the error is detected.
 
-Dr. Ortiz buys 12 kits for her embedded systems course. The lab technician, Sam, checks each kit against the parts checklist in a few minutes and finds all kits complete. Six weeks in, one station's readings start to drift and its jaw pads are worn. Sam runs the self-test, which points to the force sensor. He swaps the sensor and pads in about 15 minutes without unmounting the gripper from the arm or tearing down the linkage, then recalibrates.
 
-During the same week a student commands the jaws to close on a fixed vise. Firmware current limiting and the hardware over-current protection stop the servo from stalling into burnout, and the linkage does not lock up. A warning label at the jaws had already reminded the student about the pinch hazard, and no one is hurt. At the end of term, Dr. Ortiz orders gripper-only kits to fit six older arm bases left over from previous years, using the adapter plates.
+### User Story #2: Manufacturer
+
+A manufacturer is creating delicate glass components for chandeliers. As the components come down the line in a range of sizes, it is difficult to program a set claw separation without potentially damaging the parts or getting sharp glass fragments in the assembly line. The company therefore uses the haptic gripper on the end of their arm to lift the pieces free of the assembly line. Instead of attempting to identify the glass components and adjust the gripper separation accordingly, the sensors allow the robot to always use the same safe amount of force to collect the parts.
+
+The implementation of the gripper not only removes the need for optical sensing algorithms to determine the part to be collected, but makes the robot code simpler and more reliable. The sensors also alert the robot when it fails to collect the components properly, allowing the robot to either make another attempt or flag itself for recalibration and maintenance.
+
 
 ## Aspects
 
