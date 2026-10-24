@@ -4,56 +4,21 @@ title: Team Block Diagram
 
 ## Introduction
 
-**Bold Text**
-_Italic Text_
-**_Bold and Italic Text_**
+This document outlines the hardware architecture and system layout for the **Team 104 Smart Gripper**. _It details the physical integration of components_ and **_the electrical pathways across all system nodes._**
 
 ## Research Question
 
-* Bullet Point 1
-* Bullet Point 2
-* Bullet Point 3
+- How will power be distributed across the master and peripheral nodes?
+- What are the physical data interfaces required between the microcontrollers and sensors?
+- How can the hardware layout be optimized to fit within the physical constraints of the gripper chassis?
 
 ## Images
 
-![image caption](https://idealab.asu.edu/assets/images/research/jumper1.png)  
-**Figure 2:** Here is a picture of an image linked on the internet
-
-
-![dead bug circuit](../image/imageGoal.JPG){style="width:350px;"}  
-**Figure 2:** Here is a picture from the image folder on my local site, with css formatting to make it smaller
-
-<!-- 
-![showcase](../image/innovation_showcase_Sp-2025.jpg)  
-**Figure 3:** Innovation Showcase Spring '25, where the products were a STEM-themed display that demonstrates a single scientific/engineering concept with the intended user of K-12 students interested in learning about science, technology, engineering, or math. -->
-
+![Team 104 Block Diagram](image/team104blockdiagram.png)  
+**Figure 1:** Complete hardware block diagram outlining the physical interconnections and power distribution for the Smart Gripper subsystem nodes.
 
 ## Results
 
-1. Numbered Point 1
-1. Numbered Point 2
-1. Numbered Point 3
-
-## Conclusions and Future Work
-
-## External Links
-
-[example link to idealab](https://idealab.asu.edu)
-
-
-## Results
-
-1. Numbered Point 1
-1. Numbered Point 2
-1. Numbered Point 3
-
-## Conclusions and Future Work
-
-## External Links
-
-[example link to idealab](https://idealab.asu.edu)
-
-
-## References
-
-
+1. Defined the hardware hierarchy consisting of a Master Node and four specialized sensor nodes (Grip, Tactile, Proximity, and Slip Detection).
+2. Mapped out the power distribution network for all sub-assemblies.
+3. Established physical data routing paths for all peripheral component connections.
