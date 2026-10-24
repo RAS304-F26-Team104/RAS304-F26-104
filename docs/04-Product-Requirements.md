@@ -12,11 +12,11 @@ This project aims to research, engineer, and validate an adaptive robotic grippe
 
 
 ## Stakeholders
-**Target Group (Primary Users):** Undergraduate and graduate university researchers, STEM Educators, automation testbeds, rapid prototypers aged 18-45. They are hands-on, technologically ambitious, and seek a highly reliable, modular system that can integrate flawlessly with their existing and future projects.
-**Target Purchaser:** University lab coordinators, academic department heads, STEM program directors, and budget conscious researchers looking for gripper systems that are able to provide feedback.
-**End Users (Lab Peers, Researchers, Prototypers, System Integrators):** Prefers easy to repair, reliable products that are able to permit rapid component replacement without full system teardowns.  
-**Robot Platform (Host system bearing the payload):** Wants minimal power consumption, low weight, structural rigidity, and allows high amounts of feedback to be sent over different communication protocols.
-**Payload (Target Object):** Needs stable gripping surfaces, dynamic force compliance for varying stiffnesses, and non-destructive contact forces. 
+**Target Group (Primary Users):** Undergraduate and graduate university researchers, STEM Educators, automation testbeds, rapid prototypers aged 18-45. They are hands-on, technologically ambitious, and seek a highly reliable, modular system that can integrate flawlessly with their existing and future projects.<br>
+**Target Purchaser:** University lab coordinators, academic department heads, STEM program directors, and budget conscious researchers looking for gripper systems that are able to provide feedback.<br>
+**End Users (Lab Peers, Researchers, Prototypers, System Integrators):** Prefers easy to repair, reliable products that are able to permit rapid component replacement without full system teardowns.<br>  
+**Robot Platform (Host system bearing the payload):** Wants minimal power consumption, low weight, structural rigidity, and allows high amounts of feedback to be sent over different communication protocols.<br>
+**Payload (Target Object):** Needs stable gripping surfaces, dynamic force compliance for varying stiffnesses, and non-destructive contact forces.<br>
 
 ## Use Cases
 
@@ -24,9 +24,9 @@ This project aims to research, engineer, and validate an adaptive robotic grippe
 
 
 A professor at an undergraduate college program needs to teach his students about integrating sensors into feedback loops, and selects the robotic gripper for this purpose. The gripper allows him to build on existing instruction in robotic kinematics by mounting the gripper to the arm the students have used previously. The pressure sensors in the gripper allow the students to make a program that verifies successful collection of a block by measuring the mechanical resistance on the gripper’s closing action. 
-
+<br>
 The feedback provided by the gripper also allows him to teach his students about implementing the block-sensing program into an autonomously operating program, enabling it to detect errors when the block is missed. The students are then tasked with creating software to find and recollect the block when the error is detected.
-
+<br>
 
 ### User Story #2: Manufacturer
 
