@@ -12,11 +12,11 @@ This project aims to research, engineer, and validate an adaptive robotic grippe
 
 
 ## Stakeholders
-**Target Group (Primary Users):** Undergraduate and graduate university researchers, STEM Educators, automation testbeds, rapid prototypers aged 18-45. They are hands-on, technologically ambitious, and seek a highly reliable, modular system that can integrate flawlessly with their existing and future projects.<br>
-**Target Purchaser:** University lab coordinators, academic department heads, STEM program directors, and budget conscious researchers looking for gripper systems that are able to provide feedback.<br>
-**End Users (Lab Peers, Researchers, Prototypers, System Integrators):** Prefers easy to repair, reliable products that are able to permit rapid component replacement without full system teardowns.<br>  
-**Robot Platform (Host system bearing the payload):** Wants minimal power consumption, low weight, structural rigidity, and allows high amounts of feedback to be sent over different communication protocols.<br>
-**Payload (Target Object):** Needs stable gripping surfaces, dynamic force compliance for varying stiffnesses, and non-destructive contact forces.<br>
+**Target Group (Primary Users):** Undergraduate and graduate university researchers, STEM Educators, automation testbeds, rapid prototypers aged 18-45. They are hands-on, technologically ambitious, and seek a highly reliable, modular system that can integrate flawlessly with their existing and future projects.<br><br>
+**Target Purchaser:** University lab coordinators, academic department heads, STEM program directors, and budget conscious researchers looking for gripper systems that are able to provide feedback.<br><br>
+**End Users (Lab Peers, Researchers, Prototypers, System Integrators):** Prefers easy to repair, reliable products that are able to permit rapid component replacement without full system teardowns.<br><br>
+**Robot Platform (Host system bearing the payload):** Wants minimal power consumption, low weight, structural rigidity, and allows high amounts of feedback to be sent over different communication protocols.<br><br>
+**Payload (Target Object):** Needs stable gripping surfaces, dynamic force compliance for varying stiffnesses, and non-destructive contact forces.<br><br>
 
 ## Use Cases
 
