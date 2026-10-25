@@ -33,4 +33,4 @@ Professor Thangavelu<br>
 | Emmanuel Garcia        | link |
 | Aakash Kumar           | [Aakash Kumar's GitHub](https://iicaros.github.io/akuma501_RAS304_F26/) |
 | Sakiya Mason           | [Sakiya Mason's GitHub](https://samaso12.github.io/samaso12_RAS304_F26/) |
-| Joseph Zimmerman       | link |
+| Joseph Zimmerman       | [Joseph Zimmerman's Github](https://thespiff.github.io/jmzimme7_RAS304_F26/) |
