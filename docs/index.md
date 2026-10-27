@@ -30,7 +30,7 @@ Professor Thangavelu<br>
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
 | Jared Chapman          | [Jared Chapman's Github](https://jmchapman06.github.io/1238518829_RAS304_F26/) |
-| Emmanuel Garcia        | link |
+| Emmanuel Garcia        | [Emmanuel Garcia's Github] (https://emmanuelgarcia2006.github.io/engarci7_RAS304_F26/) |
 | Aakash Kumar           | [Aakash Kumar's GitHub](https://iicaros.github.io/akuma501_RAS304_F26/) |
 | Sakiya Mason           | [Sakiya Mason's GitHub](https://samaso12.github.io/samaso12_RAS304_F26/) |
 | Joseph Zimmerman       | [Joseph Zimmerman's Github](https://thespiff.github.io/jmzimme7_RAS304_F26/) |
