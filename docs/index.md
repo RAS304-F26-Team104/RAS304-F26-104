@@ -7,7 +7,7 @@ tags:
 <center>
 <font size="8">End-Effector - Force Sensing Gripper<br>
 <font size="5">Team 104<br>
-Submission: September 1st, 2026<br>
+Submission: October 29, 2026<br>
 <font size="4">Arizona State University<br>
 RAS 304<br>
 Professor Thangavelu<br>
@@ -18,6 +18,12 @@ Professor Thangavelu<br>
 ## Team Introduction
 
 Our team is building a robotic gripper that will be able to sense how much force is being exerted on the object being picked up. Our system is divided into 4 nodes, a grip actuation node, a force sensing node, an object proximity node utilizing an IR photodiode, and a 3-axis accelerometer node for slip detection. Each node is built on one PCB and will send accumulated data to the bus node. The goal of our project is to utilize force data, object proximity, and slip detection to build a smart gripper that is capable of handling tasks and performing corrections automatically as well as gripping non-fragile and fragile objects.
+
+### Project Summary
+The Smart Gripper we are constructing is an end-effector that uses a five-node architecture. 
+A central Master bus node (powered by a PIC18F57Q43) coordinates telemetry from four dedicated peripheral subsystems: grip actuation, tactile force sensing, infrared proximity detection, and a 3-axis accelerometer utilizing op-amps for real-time slip detection. 
+By continuously polling sensor data and evaluating logic states across the UART network, the master controller dynamically adjusts motor actuation. 
+This closed-loop feedback allows the system to autonomously adjust its grip strength, ensuring it can safely secure delicate items without crushing them and automatically recover if payload slippage is detected.
 
 
 ## Team Members Datasheet links
