@@ -29,7 +29,7 @@
 
     
       
-        <title>Software Proposal - RAS304 Team Report Template</title>
+        <title>07 Software Proposal - RAS304 Team Report Template</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#decision-making-process" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Software Proposal
+              07 Software Proposal
             
           </span>
         </div>
@@ -328,7 +328,7 @@
   
     
   
-  Software Proposal
+  07 Software Proposal
 
       </a>
     </li>
@@ -609,7 +609,7 @@
   <span class="md-ellipsis">
     
   
-    Software Proposal
+    07 Software Proposal
   
 
     
@@ -627,7 +627,7 @@
   <span class="md-ellipsis">
     
   
-    Software Proposal
+    07 Software Proposal
   
 
     
@@ -651,10 +651,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#decision-making-process" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction
+        Decision-Making Process
       
     </span>
   </a>
@@ -662,21 +662,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-nodes" class="md-nav__link">
+  <a href="#how-the-software-meets-product-requirements" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Nodes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flowcharts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flowcharts
+        How the Software Meets Product Requirements
       
     </span>
   </a>
@@ -808,10 +797,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#decision-making-process" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction
+        Decision-Making Process
       
     </span>
   </a>
@@ -819,21 +808,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-nodes" class="md-nav__link">
+  <a href="#how-the-software-meets-product-requirements" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Nodes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flowcharts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flowcharts
+        How the Software Meets Product Requirements
       
     </span>
   </a>
@@ -873,19 +851,50 @@
   
 
 
-  <h1>Software Proposal</h1>
+  <h1>07 Software Proposal</h1>
 
-<h2 id="introduction">Introduction</h2>
-<p>This document proposes the software state machines and execution logic for the <strong>Team 104 Smart Gripper</strong>. It details the peripheral initialization, sensor polling, and UART communication protocols across all system nodes.</p>
-<h2 id="system-nodes">System Nodes</h2>
-<ul>
-<li>Board 1: Master Node</li>
-<li>Board 2: Grip Node</li>
-<li>Board 3: Tactile Node</li>
-<li>Board 4: Proximity Node</li>
-<li>Board 5: Slip Detection Node</li>
-</ul>
-<h2 id="flowcharts">Flowcharts</h2>
+<h2 id="decision-making-process">Decision-Making Process</h2>
+<p>We gave each board its own flowchart because each node runs independently and communicates only through a shared UART message format. This lets each teammate develop and test a node on its own. Every board follows the same structure: initialize, then loop through read, decide, report and a short fixed delay. This keeps timing predictable and the code easy to review.</p>
+<p>Sensor nodes measure and report, with thresholds applied next to the signal they belong to. The actuator node responds to commands and protects itself from overload. The hub polls the node UART links and routes data, matching the one-UART-per-node hardware.</p>
+<h2 id="how-the-software-meets-product-requirements">How the Software Meets Product Requirements</h2>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>How the software meets it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Sense grip force]</td>
+<td>Board 3 reads the FSR force data, filters the analog out and reports it</td>
+</tr>
+<tr>
+<td>[Detect object proximity]</td>
+<td>Board 4 reads and processes the IR signal and reports it</td>
+</tr>
+<tr>
+<td>[Detect slip]</td>
+<td>Board 5 samples the accelerometer axes and flags slip past a threshold</td>
+</tr>
+<tr>
+<td>[Control grip strength]</td>
+<td>Board 2 sets motor direction and PWM from hub commands</td>
+</tr>
+<tr>
+<td>[Protect the motor and object]</td>
+<td>Board 2 monitors current for overload; Board 3 raises ALERT on high force</td>
+</tr>
+<tr>
+<td>[Report status]</td>
+<td>Board 1 formats and forwards telemetry to the host PC</td>
+</tr>
+<tr>
+<td>## Flowcharts</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/Team104SoftwareProposal.drawio.png" data-desc-position="bottom"><img alt="Team 104 Software Proposal Flowchart" src="../image/Team104SoftwareProposal.drawio.png" width="800px"></a>
 <strong>Figure 1:</strong> Complete software execution flow and polling loops for the Smart Gripper subsystem nodes.</p>
 
@@ -894,9 +903,6 @@
 
 
 
-
-  
-  
 
 
 
