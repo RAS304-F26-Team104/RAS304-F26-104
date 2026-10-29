@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#design-decisions" class="md-skip">
           Skip to content
         </a>
       
@@ -624,21 +624,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#design-decisions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#research-question" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Research Question
+        Design Decisions
       
     </span>
   </a>
@@ -808,21 +797,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#design-decisions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#research-question" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Research Question
+        Design Decisions
       
     </span>
   </a>
@@ -875,24 +853,20 @@
 
   <h1>Team Block Diagram</h1>
 
-<h2 id="introduction">Introduction</h2>
-<p>This document outlines the hardware architecture and system layout for the <strong>Team 104 Smart Gripper</strong>. <em>It details the physical integration of components</em> and <strong><em>the electrical pathways across all system nodes.</em></strong></p>
-<h2 id="research-question">Research Question</h2>
-<ul>
-<li>How will power be distributed across the master and peripheral nodes?</li>
-<li>What are the physical data interfaces required between the microcontrollers and sensors?</li>
-<li>How can the hardware layout be optimized to fit within the physical constraints of the gripper chassis?</li>
-</ul>
+<h2 id="design-decisions">Design Decisions</h2>
+<p><strong>Hub-and-spoke topology.</strong> Board 1 is the only board that talks to every other board. This keeps the system's decision-making in one place, lets each teammate develop and test a node independently, and means a fault in one node cannot corrupt the others.</p>
+<p><strong>One function per board.</strong> The nodes are split by job: Board 2 actuates the grip, and Boards 3, 4 and 5 sense force, proximity and slip. Because all boards use the same MCU and the same 8-pin connector, any node can be swapped or debugged without changing the hub's hardware.</p>
+<p><strong>Dedicated UART per node instead of a shared bus.</strong> The hub has four UART peripherals, so one per connector. This avoids addressing, arbitration and collision handling, and each node only needs one simple serial port.</p>
+<p><strong>Hardwired safety lines.</strong> Each ribbon cable carries a discrete E-STOP (hub to node) and ALERT (node to hub) line next to the UART. Safety and urgent events therefore do not depend on software or serial traffic. Board 2 also has a hardware overload comparator on the motor current, so motor protection does not depend on the hub.</p>
+<p><strong>Analog conditioning at the edge.</strong> Each sensing node amplifies and filters its own signal before the ADC, so only digital data crosses the cable. Each filter matches its signal:
+- FSR Sensor (Board 3): instrumentation amp plus low-pass filter for a small, slow signal.
+- IR proximity (Board 4): band-pass filter to reject ambient light.
+- Accelerometer (Board 5): high-pass filter plus peak detection per axis, so the ADC samples an envelope instead of a fast waveform.</p>
+<p><strong>OUr Cabling.</strong> The 8-pin ribbon carries UART (pins 1-2), E-STOP (3), ALERT (4) and ground (8), with pins 5-7 spare for future needs such as a power rail or sync line.</p>
 <h2 id="images">Images</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/team104blockdiagram.png" data-desc-position="bottom"><img alt="Team 104 Block Diagram" src="../image/team104blockdiagram.png"></a><br>
-<strong>Figure 1:</strong> Complete hardware block diagram outlining the physical interconnections and power distribution for the Smart Gripper subsystem nodes.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/team104blockdiagram.png" data-desc-position="bottom"><img alt="Team 104 Block Diagram" src="../image/team104blockdiagram.png"></a>  </p>
 <p>The Block Diagram as a PDF download is available <a href="../image/team-block-diagram.pdf"><em>here</em></a>
 <br><br></p>
-<ol>
-<li>Defined the hardware hierarchy consisting of a Master Node and four specialized sensor nodes (Grip, Tactile, Proximity, and Slip Detection).</li>
-<li>Mapped out the power distribution network for all sub-assemblies.</li>
-<li>Established physical data routing paths for all peripheral component connections.</li>
-</ol>
 
 
 
