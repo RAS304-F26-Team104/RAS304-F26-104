@@ -7,6 +7,13 @@ title: Design Ideation
 
 This matrix outlines 100 modular features engineered to satisfy our top 20 high-priority (P8-P10) user needs. Each PRD requirement includes 5 actionable feature details across mechanics, electronics, and software. These concepts serve as mix-and-match building blocks to achieve dynamic force compliance, structural durability, and reliable tactile feedback.
 
+## Design Selection Process
+
+Our team compared multiple gripper concepts using our ideas from brainstorming and a team vote, scoring them on cost, ease of fabrication, and ability to handle both fragile and heavy objects. Instead of picking one concept, we combined the best ideas, concept 1s simple mechanical design with simple force feedback, into a gripper that senses how hard it is squeezing.
+
+## Changes from the Design Ideation
+
+Board 3 originally used a load cell and instrumentation amplifier, but a load cell does not work for a gripper for obvious reasons. We switched to a thin Interlink FSR 402 with a voltage divider, gain stage, and low-pass filter on a single MCP6004 op-amp, powered by a 5 V LM7805. 
 ### Grasping Versatility and Orientation
 
 
