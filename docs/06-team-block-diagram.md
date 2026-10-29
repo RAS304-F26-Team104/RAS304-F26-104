@@ -17,7 +17,7 @@ title: Team Block Diagram
 - IR proximity (Board 4): band-pass filter to reject ambient light.
 - Accelerometer (Board 5): high-pass filter plus peak detection per axis, so the ADC samples an envelope instead of a fast waveform.
 
-**OUr Cabling.** The 8-pin ribbon carries UART (pins 1-2), E-STOP (3), ALERT (4) and ground (8), with pins 5-7 spare for future needs such as a power rail or sync line.
+**Our Cabling.** The 8-pin ribbon carries UART (pins 1-2), E-STOP (3), ALERT (4) and ground (8), with pins 5-7 spare for future needs such as a power rail or sync line.
 
 ## Images
 

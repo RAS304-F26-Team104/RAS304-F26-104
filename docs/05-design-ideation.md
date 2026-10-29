@@ -282,5 +282,5 @@ Having our sensors distributed across multiple nodes not only allows our team to
 > ## Design Deviation and Updates
 
 While our final design still remains adherent to a lot of the original "100 Ranked Needs", one of the most notable differences was that it changed from having our boards daisy chained together to a master hub and spoke configuration.
-We realized that a daisy chained configuration would negatively affect nt only debugging during development but also servicability for end users.
-Allowing users to swap out a single worn/damaged board rather than having to figure out where in the feedback loop the error was occuring aligns more with our updated Product Mission Statement .  
+We realized that a daisy chained configuration would negatively affect not only debugging during development but also servicability for end users.
+Allowing users to swap out a single worn/damaged board rather than having to figure out where in the feedback loop the error was occuring aligns more with our updated Product Mission Statement.  
